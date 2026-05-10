@@ -74,6 +74,7 @@ const UI = {
     goalLabel: "الهدف",
     chooseSubrah: "اختر سورة من القائمة",
     ftTagline: " تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+    sbTagline: " تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
     ftNote: " هذا الموقع صدقة جارية لخدمة حجاج بيت الله الحرام",
 
     popupDiabetesTitle: "تنبيه مهم لمرضى السكري",
@@ -103,6 +104,8 @@ const UI = {
     scrollDiscover: "اكتشف",
     brandName: "🕋 دليل الحاج",
     ftTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+    sbTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+
     ftNote: "هذا الموقع صدقة جارية لخدمة حجاج بيت الله الحرام",
     ftAyahBadge: "وَللهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ",
     ftCopyright: "© 1446 هـ — صُنع بحب لخدمة ضيوف الرحمن",
@@ -110,6 +113,12 @@ const UI = {
     ftContact: "تواصل معنا",
     ftBottomText:
       "اللَّهُمَّ اجْعَلْهُ صَدَقَةً جَارِيَةً — تَقَبَّلَ اللَّهُ مِنَّا وَمِنكُم صَالِحَ الأَعْمَال",
+    ftDuaText:
+      "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    ftDuaRef: "البقرة: 201",
+    sidebarDuaRef: "البقرة: ٢٠١",
+    sidebarDua:
+      "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
   },
   en: {
     dir: "ltr",
@@ -184,6 +193,8 @@ const UI = {
     goalLabel: "Goal",
     chooseSubrah: "Choose a surah from the list",
     ftTagline: "May Allah accept from us and from you",
+    sbTagline: "May Allah accept from us and from you",
+
     ftNote: "This website is an ongoing charity for Hajj pilgrims",
 
     popupDiabetesTitle: "Important Notice for Diabetics",
@@ -213,6 +224,8 @@ const UI = {
     scrollDiscover: "Discover",
     brandName: "🕋 Hajj Guide",
     ftTagline: "May Allah accept from us and from you",
+    sbTagline: "May Allah accept from us and from you",
+
     ftNote: "This website is an ongoing charity for Hajj pilgrims",
     ftAyahBadge: "And to Allah belongs the pilgrimage of the House",
     ftCopyright: "© 1446 AH — Made with love for the guests of Allah",
@@ -220,6 +233,12 @@ const UI = {
     ftContact: "Contact Us",
     ftBottomText:
       "O Allah, make it an ongoing charity — May Allah accept our righteous deeds",
+    ftDuaText:
+      "Our Lord, give us good in this world and good in the Hereafter and protect us from the punishment of the Fire",
+    ftDuaRef: "Al-Baqarah: 201",
+    sidebarDuaRef: "Al-Baqarah: 201",
+    sidebarDua:
+      "Our Lord, grant us goodness in this world and goodness in the Hereafter",
   },
   ru: {
     dir: "ltr",
@@ -294,6 +313,8 @@ const UI = {
     goalLabel: "Цель",
     chooseSubrah: "Выберите суру из списка",
     ftTagline: " Да примет Аллах от нас и от вас",
+    sbTagline: " Да примет Аллах от нас и от вас",
+
     ftNote:
       "Этот сайт является садака джария для обслуживания паломников Дома Аллаха",
 
@@ -323,6 +344,8 @@ const UI = {
     scrollDiscover: "Открыть",
     brandName: "🕋 Путеводитель",
     ftTagline: "Да примет Аллах от нас и от вас",
+    sbTagline: "Да примет Аллах от нас и от вас",
+
     ftNote: "Этот сайт — непрерывная садака для паломников",
     ftAyahBadge: "Аллаху принадлежит паломничество к Дому",
     ftCopyright: "© 1446 г.х. — Сделано с любовью для гостей Аллаха",
@@ -330,6 +353,12 @@ const UI = {
     ftContact: "Связаться с нами",
     ftBottomText:
       "О Аллах, сделай это непрерывной садакой — Да примет Аллах наши праведные дела",
+    ftDuaText:
+      "Господь наш, даруй нам благо в этом мире и в мире ином и защити нас от мучений Огня",
+    ftDuaRef: "Аль-Бакара: 201",
+    sidebarDuaRef: "Аль-Бакара: 201",
+    sidebarDua:
+      "Господь наш! Даруй нам благо в этом мире и благо в Последней жизни",
   },
   fa: {
     dir: "rtl",
@@ -403,6 +432,8 @@ const UI = {
     goalLabel: "هدف",
     chooseSubrah: "سوره‌ای از فهرست انتخاب کنید",
     ftTagline: "خداوند از ما و شما قبول فرماید",
+    sbTagline: "خداوند از ما و شما قبول فرماید",
+
     ftNote: "این وب‌سایت صدقه جاریه‌ای برای خدمت به زائران خانه خداست",
 
     popupDiabetesTitle: "اطلاعیه مهم برای دیابتی‌ها",
@@ -432,6 +463,8 @@ const UI = {
     scrollDiscover: "کشف کنید",
     brandName: "🕋 راهنمای حاجی",
     ftTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+    sbTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+
     ftNote: "این وبسایت صدقه جاریه‌ای برای حجاج است",
     ftAyahBadge: "وَللهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ",
     ftCopyright: "© ۱۴۴۶ هـ — با محبت برای مهمانان خداوند ساخته شده",
@@ -439,6 +472,11 @@ const UI = {
     ftContact: "تماس با ما",
     ftBottomText:
       "اللَّهُمَّ اجْعَلْهُ صَدَقَةً جَارِيَةً — تَقَبَّلَ اللَّهُ مِنَّا وَمِنكُم صَالِحَ الأَعْمَال",
+    ftDuaText:
+      "پروردگارا در دنیا و آخرت به ما نیکی عطا کن و از عذاب آتش نگاه دار",
+    ftDuaRef: "البقره: ۲۰۱",
+    sidebarDuaRef: "البقره: ۲۰۱",
+    sidebarDua: "پروردگارا، در دنیا و آخرت به ما نیکی عطا فرما",
   },
   tr: {
     dir: "ltr",
@@ -513,6 +551,8 @@ const UI = {
     goalLabel: "Hedef",
     chooseSubrah: "Listeden bir sure seçin",
     ftTagline: "Allah bizden ve sizden kabul etsin",
+    sbTagline: "Allah bizden ve sizden kabul etsin",
+
     ftNote:
       "Bu site, Allah’ın kutsal evinin hacılarına hizmet için bir sadaka-i cariyedir",
 
@@ -543,6 +583,8 @@ const UI = {
     scrollDiscover: "Keşfet",
     brandName: "🕋 Hac Rehberi",
     ftTagline: "Allah bizden ve sizden kabul etsin",
+    sbTagline: "Allah bizden ve sizden kabul etsin",
+
     ftNote: "Bu site hacılar için sadaka-i cariyedir",
     ftAyahBadge: "İnsanlar üzerinde Allah için haccetmek vardır",
     ftCopyright: "© 1446 H — Allah'ın misafirleri için sevgiyle yapıldı",
@@ -550,6 +592,11 @@ const UI = {
     ftContact: "Bize Ulaşın",
     ftBottomText:
       "Allah'ım bunu sadaka-i cariye kıl — Allah salih amellerimizi kabul etsin",
+    ftDuaText:
+      "Rabbimiz, bize dünyada ve ahirette iyilik ver ve bizi cehennem azabından koru",
+    ftDuaRef: "Bakara: 201",
+    sidebarDuaRef: "Bakara: 201",
+    sidebarDua: "Rabbimiz! Bize dünyada da iyilik, ahirette de iyilik ver",
   },
   ur: {
     dir: "rtl",
@@ -624,6 +671,8 @@ const UI = {
     goalLabel: "ہدف",
     chooseSubrah: "فہرست سے سورت منتخب کریں",
     ftTagline: "اللہ ہم سب سے قبول فرمائے",
+    sbTagline: "اللہ ہم سب سے قبول فرمائے",
+
     ftNote: "یہ ویب سائٹ بیت اللہ کے حجاج کی خدمت کے لیے صدقہ جاریہ ہے",
 
     popupDiabetesTitle: "ذیابیطس کے مریضوں کے لیے اہم اطلاع",
@@ -653,6 +702,8 @@ const UI = {
     scrollDiscover: "دریافت کریں",
     brandName: "🕋 حاجی گائیڈ",
     ftTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+    sbTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
+
     ftNote: "یہ ویب سائٹ حجاج کے لیے صدقہ جاریہ ہے",
     ftAyahBadge: "وَللهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ",
     ftCopyright: "© 1446 ہجری — اللہ کے مہمانوں کی خدمت میں",
@@ -660,6 +711,12 @@ const UI = {
     ftContact: "ہم سے رابطہ کریں",
     ftBottomText:
       "اللَّهُمَّ اجْعَلْهُ صَدَقَةً جَارِيَةً — تَقَبَّلَ اللَّهُ مِنَّا وَمِنكُم صَالِحَ الأَعْمَال",
+    ftDuaText: "اے ہمارے رب! دنیا اور آخرت میں بھلائی دے اور آگ کے عذاب سے بچا",
+
+    ftDuaRef: "البقرہ: 201",
+    sidebarDuaRef: "البقرہ: 201",
+    sidebarDua:
+      "اے ہمارے رب! ہمیں دنیا میں بھی بھلائی عطا فرما اور آخرت میں بھی بھلائی عطا فرما",
   },
 };
 
@@ -1153,8 +1210,41 @@ function setGlobalLang(lang, btn) {
   } catch (e) {}
 
   // ── Dropdown display ──
-  document.getElementById("currentFlag").textContent = btn.dataset.flag;
-  document.getElementById("currentLangName").textContent = btn.dataset.name;
+  // const flagEl = btn.querySelector(".lang-flag");
+  // document.getElementById("currentFlag").textContent = flagEl
+  //   ? flagEl.textContent.trim()
+  //   : flag;
+  // document.getElementById("currentLangName").textContent = btn.dataset.name;
+  // document
+  //   .querySelectorAll(".lang-option")
+  //   .forEach((b) => b.classList.remove("active"));
+  // btn.classList.add("active");
+  // document.getElementById("langDropdown").classList.remove("open");
+
+  // ── Dropdown display ──
+  const flagSpan = document.getElementById("currentFlag");
+  const nameSpan = document.getElementById("currentLangName");
+
+  // خذ العلم من الـ onclick مباشرة مش من dataset
+  const langFlags = {
+    ar: "🇸🇦",
+    en: "🇬🇧",
+    ru: "🇷🇺",
+    fa: "🇮🇷",
+    tr: "🇹🇷",
+    ur: "🇵🇰",
+  };
+  const langNames = {
+    ar: "العربية",
+    en: "English",
+    ru: "Русский",
+    fa: "فارسی",
+    tr: "Türkçe",
+    ur: "اردو",
+  };
+  if (flagSpan) flagSpan.textContent = langFlags[lang];
+  if (nameSpan) nameSpan.textContent = langNames[lang];
+
   document
     .querySelectorAll(".lang-option")
     .forEach((b) => b.classList.remove("active"));
@@ -1169,6 +1259,9 @@ function setGlobalLang(lang, btn) {
 
   // title site
   s("brand-name", "🕋 " + ui.title);
+  s("ft-dua-ref", ui.ftDuaRef);
+  s("sidebar-tagline", ui.sidebarDua);
+  s("sidebar-dua-ref", ui.sidebarDuaRef);
 
   // ── Nav pills ──
   document.querySelectorAll(".nav-q").forEach((e) => (e.textContent = ui.navQ));
@@ -1306,12 +1399,15 @@ function setGlobalLang(lang, btn) {
 
   // Footer texts
   s("ft-tagline", ui.ftTagline);
+  s("sb-tagline", ui.sbTagline);
+
   s("ft-note", ui.ftNote);
   s("ft-ayah-badge", ui.ftAyahBadge);
   s("ft-copyright", ui.ftCopyright);
   s("ft-privacy", ui.ftPrivacy);
   s("ft-contact", ui.ftContact);
   s("ft-bottom-text", ui.ftBottomText);
+  s("ft-dua-text", ui.ftDuaText);
 
   // ── Modal default text ──
   const modalDefault = document.querySelector("#modalAyahDisplay div");
