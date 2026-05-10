@@ -23,6 +23,8 @@
     <link href="assets/CSS/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/CSS/style.css" />
+
+    <link rel="shortcut icon" href="assets/IMG/images.jpg" />
   </head>
   <body>
     <!-- ══ NAVBAR (same as index.html) ══ -->
@@ -128,7 +130,9 @@
             >🕋 دليل الحاج</a
           >
         </div>
-        <div class="sidebar-tagline">تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم</div>
+        <div class="sidebar-tagline" id="ft-tagline">
+          تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم
+        </div>
       </div>
       <div class="sidebar-links">
         <a
@@ -203,7 +207,7 @@
           <div class="dua-ar" id="sidebar-dua-text">
             رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً
           </div>
-          <div class="dua-ref">البقرة: ٢٠١</div>
+          <div class="dua-ref" id="sidebar-dua-ref">البقرة: ٢٠١</div>
         </div>
       </div>
     </div>
@@ -458,6 +462,26 @@
                 التوقف المؤقت عن مواصلة أداء المناسك عند الإحساس بأعراض نقص
                 مستوى السكر في الدم.
               </div>
+              <div
+                class="hg-card-text mt-2"
+                style="color: var(--gold-light); font-weight: 700"
+                id="d9symptoms-title"
+              >
+                أعراض انخفاض السكر:
+              </div>
+              <div class="hg-card-text" id="d9symptoms">
+                التعرّق الشديد المفاجئ • الرجفة...
+              </div>
+              <div
+                class="hg-card-text mt-2"
+                style="color: #e05050; font-weight: 700"
+                id="d9severe-title"
+              >
+                أعراض خطيرة:
+              </div>
+              <div class="hg-card-text" style="color: #e08080" id="d9severe">
+                عدم القدرة على الكلام...
+              </div>
             </div>
             <span class="hg-card-icon"
               ><i
@@ -465,6 +489,32 @@
                 style="color: yellow"
               ></i
             ></span>
+          </div>
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d10">١٠</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d10t">
+                انتبه لأعراض ارتفاع السكر
+              </div>
+              <div class="hg-card-text" id="d10d">...</div>
+              <div
+                class="hg-card-text mt-2"
+                style="color: var(--gold-light); font-weight: 700"
+                id="d10symptoms-title"
+              >
+                أعراض ارتفاع السكر:
+              </div>
+              <div class="hg-card-text" id="d10symptoms">العطش الشديد...</div>
+              <div
+                class="hg-card-text mt-2"
+                style="color: var(--gold-light); font-weight: 700"
+                id="d10manage-title"
+              >
+                التعامل مع الارتفاع:
+              </div>
+              <div class="hg-card-text" id="d10manage">التوقف للراحة...</div>
+            </div>
+            <span class="hg-card-icon">📈</span>
           </div>
         </div>
 
@@ -524,6 +574,44 @@
             <div class="fa-step-text" id="fa5">
               إذا لم يتوفر الجلوكاجون ولم يستعد المريض وعيه خلال 15–20 دقيقة،
               فيجب نقل المريض إلى المستشفى في أسرع وقت.
+            </div>
+          </div>
+
+          <!-- قسم ارتفاع السكر — بعد fa5 مباشرة -->
+          <div class="sep" style="margin: 30px 0 24px"></div>
+
+          <div class="text-center mb-4">
+            <h3
+              class="hg-section-title"
+              style="font-size: 1.5rem"
+              id="p3-high-title"
+            >
+              التعامل مع ارتفاع السكر خلال الحج
+            </h3>
+          </div>
+
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-h1">١</div>
+            <div class="fa-step-text" id="h_fa1">التوقف للراحة</div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-h2">٢</div>
+            <div class="fa-step-text" id="h_fa2">شرب الماء</div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-h3">٣</div>
+            <div class="fa-step-text" id="h_fa3">قياس السكر</div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-h4">٤</div>
+            <div class="fa-step-text" id="h_fa4">
+              الالتزام بالعلاج أو الأنسولين
+            </div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-h5">٥</div>
+            <div class="fa-step-text" id="h_fa5">
+              مراجعة الطبيب عند استمرار الأعراض
             </div>
           </div>
         </div>
@@ -832,7 +920,10 @@
                   رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ
                   حَسَنَةً وَقِنَا عَذَابَ النَّارِ
                 </p>
-                <p style="color: var(--text-muted); font-size: 0.88rem">
+                <p
+                  style="color: var(--text-muted); font-size: 0.88rem"
+                  id="ftDuaRef"
+                >
                   البقرة: 201
                 </p>
               </div>
@@ -859,13 +950,13 @@
                 href="https://www.linkin1.com/sdea"
                 class="footer-link"
                 id="ft-privacy"
-                ><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a
+                ><i class="fa-solid fa-shield-halved"></i> سياسة الخصوصية</a
               >
               <a
                 href="mailto:sdea@sdea.org.sa"
                 class="footer-link"
                 id="ft-contact"
-                ><i class="fas fa-envelope"></i> تواصل معنا</a
+                ><i class="fa-solid fa-envelope"></i>تواصل معنا</a
               >
             </div>
           </div>
