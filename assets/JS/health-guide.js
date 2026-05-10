@@ -84,6 +84,8 @@ const HG = {
       "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً",
     ftDuaText:
       "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    ftDuaRef: "البقرة: 201",
+    sidebarDuaRef: "البقرة: ٢٠١",
   },
   en: {
     dir: "ltr",
@@ -168,6 +170,8 @@ const HG = {
       "Our Lord, give us good in this world and good in the Hereafter",
     ftDuaText:
       "Our Lord, give us good in this world and good in the Hereafter and protect us from the punishment of the Fire",
+    ftDuaRef: "Al-Baqarah: 201",
+    sidebarDuaRef: "Al-Baqarah: 201",
   },
   ru: {
     dir: "ltr",
@@ -250,6 +254,8 @@ const HG = {
     sidebarDua: "Господь наш, даруй нам благо в этом мире и в мире ином",
     ftDuaText:
       "Господь наш, даруй нам благо в этом мире и в мире ином и защити нас от мучений Огня",
+    ftDuaRef: "Аль-Бакара: 201",
+    sidebarDuaRef: "Аль-Бакара: 201",
   },
   fa: {
     dir: "rtl",
@@ -331,6 +337,8 @@ const HG = {
     sidebarDua: "پروردگارا در دنیا و آخرت به ما نیکی عطا کن",
     ftDuaText:
       "پروردگارا در دنیا و آخرت به ما نیکی عطا کن و از عذاب آتش نگاه دار",
+    ftDuaRef: "البقره: ۲۰۱",
+    sidebarDuaRef: "البقره: ۲۰۱",
   },
   tr: {
     dir: "ltr",
@@ -414,6 +422,8 @@ const HG = {
     sidebarDua: "Rabbimiz, bize dünyada ve ahirette iyilik ver",
     ftDuaText:
       "Rabbimiz, bize dünyada ve ahirette iyilik ver ve bizi cehennem azabından koru",
+    ftDuaRef: "Bakara: 201",
+    sidebarDuaRef: "Bakara: 201",
   },
   ur: {
     dir: "rtl",
@@ -496,6 +506,8 @@ const HG = {
     sidebarTagline: "تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم",
     sidebarDua: "اے ہمارے رب! دنیا اور آخرت میں بھلائی دے",
     ftDuaText: "اے ہمارے رب! دنیا اور آخرت میں بھلائی دے اور آگ کے عذاب سے بچا",
+    sidebarDuaRef: "البقرہ: 201",
+    ftDuaRef: "البقرہ: 201",
   },
 };
 
@@ -545,6 +557,8 @@ function applyLang(lang) {
   document.querySelectorAll("#brand-name, #footer-brand").forEach((el) => {
     if (el) el.textContent = t.brandName;
   });
+  s("ft-dua-ref", t.ftDuaRef);
+  s("sidebar-dua-ref", t.sidebarDuaRef);
 
   // ── Nav pills ──
   document.querySelectorAll(".nav-q").forEach((e) => (e.textContent = t.navQ));
@@ -665,6 +679,7 @@ function applyLang(lang) {
   s("ft-bottom-text", t.ftBottomText);
   s("sidebar-dua-text", t.sidebarDua);
   s("ft-dua-text", t.ftDuaText);
+  s("ftDuaRef", t.ftDuaRef);
 }
 
 // ══════════════════════════════════════
