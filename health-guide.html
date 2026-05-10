@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إرشادات صحية للحاج | دليل الحاج</title>
+    <meta
+      name="description"
+      content="إرشادات صحية للحاج المصاب بالسكري — دليل شامل من الجمعية السعودية للسكر والغدد الصماء (قِند) لضمان سلامتك خلال أداء فريضة الحج."
+    />
+    <meta
+      name="keywords"
+      content="إرشادات صحية الحاج, السكري والحج, دليل الحاج الصحي, قند, SDEA"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="إرشادات صحية للحاج المصاب بالسكري" />
+    <meta
+      property="og:description"
+      content="دليل صحي شامل من الجمعية السعودية للسكر والغدد الصماء لضمان سلامة الحاج المصاب بالسكري."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0d1a12" />
+    <link href="assets/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    <!-- ══ NAVBAR (same as index.html) ══ -->
+    <nav class="navbar-custom">
+      <div class="navbar-inner">
+        <a href="index.html">
+          <span class="navbar-brand-text" id="brand-name">🕋 دليل الحاج</span>
+        </a>
+        <div class="navbar-desktop-links">
+          <a href="index.html#quran" class="nav-pill">
+            <i class="fa-solid fa-book-open m-1"> </i>
+            <span class="nav-q" id="navQ">القرآن الكريم </span></a
+          >
+          <a href="index.html#dua" class="nav-pill"
+            ><i class="fa-solid fa-hands-praying m-1"></i>
+            <span class="nav-d">أدعية</span></a
+          >
+          <a href="index.html#athkar" class="nav-pill"
+            ><i class="fa-solid fa-sun m-1"></i>
+            <span class="nav-a">أذكار</span></a
+          >
+          <a href="index.html#tasbeeh" class="nav-pill"
+            ><i class="fa fa-circle-notch m-1"></i>
+            <span class="nav-t">تسبيح</span></a
+          >
+          <a href="health-guide.html" class="nav-pill active">
+            <i class="fa-solid fa-shield-heart m-1"></i>
+            <span class="nav-h" id="nav-health">إرشادات صحية</span>
+          </a>
+        </div>
+        <div class="navbar-right-group">
+          <!-- Language Dropdown -->
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-current-btn" onclick="toggleLangMenu(event)">
+              <span class="flag" id="currentFlag">🇸🇦</span>
+              <span id="currentLangName">العربية</span>
+              <i class="fas fa-chevron-down chevron"></i>
+            </button>
+            <div class="lang-menu" id="langMenu">
+              <button
+                class="lang-option active"
+                onclick="setLang('ar', '🇸🇦', 'العربية', 'rtl', this)"
+              >
+                <span class="lang-flag">🇸🇦</span> العربية
+              </button>
+              <div class="lang-divider"></div>
+              <button
+                class="lang-option"
+                onclick="setLang('en', '🇬🇧', 'English', 'ltr', this)"
+              >
+                <span class="lang-flag">🇬🇧</span> English
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('ru', '🇷🇺', 'Русский', 'ltr', this)"
+              >
+                <span class="lang-flag">🇷🇺</span> Русский
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('fa', '🇮🇷', 'فارسی', 'rtl', this)"
+              >
+                <span class="lang-flag">🇮🇷</span> فارسی
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('tr', '🇹🇷', 'Türkçe', 'ltr', this)"
+              >
+                <span class="lang-flag">🇹🇷</span> Türkçe
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('ur', '🇵🇰', 'اردو', 'rtl', this)"
+              >
+                <span class="lang-flag">🇵🇰</span> اردو
+              </button>
+            </div>
+          </div>
+          <!-- Hamburger -->
+          <button
+            class="hamburger-btn"
+            id="hamburgerBtn"
+            onclick="toggleSidebar()"
+            aria-label="القائمة"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Overlay & Sidebar -->
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
+    <div class="sidebar-drawer" id="sidebarDrawer">
+      <div class="sidebar-top">
+        <div class="sidebar-kaaba-bg">🕋</div>
+        <div class="sidebar-brand">
+          <a href="index.html" style="color: var(--gold)" id="brand-name"
+            >🕋 دليل الحاج</a
+          >
+        </div>
+        <div class="sidebar-tagline">تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم</div>
+      </div>
+      <div class="sidebar-links">
+        <a
+          href="index.html#quran"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon si-quran">
+            <i class="fa-solid fa-book-open"> </i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-q">القرآن الكريم</span
+            ><span class="s-sub" id="sidebar-sub1">٥ سور + القرآن كاملاً</span>
+          </div>
+        </a>
+        <a
+          href="index.html#dua"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon si-dua">
+            <i class="fa-solid fa-hands-praying"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-d">أدعية </span
+            ><span class="s-sub" id="sidebar-sub2">دعاء لكل موضع</span>
+          </div>
+        </a>
+        <a
+          href="index.html#athkar"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon si-athkar">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-a">أذكار الصباح والمساء</span
+            ><span class="s-sub" id="sidebar-sub3">حصّن يومك بالذكر</span>
+          </div>
+        </a>
+        <div class="sidebar-divider"></div>
+        <a
+          href="index.html#tasbeeh"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon si-tasb">
+            <i class="fa fa-circle-notch"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-t">عداد التسبيح</span
+            ><span class="s-sub" id="sidebar-sub4">سبّح بحمد ربك</span>
+          </div>
+        </a>
+        <a
+          href="health-guide.html"
+          class="nav-pill sidebar-item active"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon sb-health">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main" id="sb-health">إرشادات صحية</span
+            ><span class="s-sub" id="sb-health-sub">للحاج المصاب بالسكري</span>
+          </div>
+        </a>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-dua-box">
+          <div class="dua-ar" id="sidebar-dua-text">
+            رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً
+          </div>
+          <div class="dua-ref">البقرة: ٢٠١</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ HERO ══ -->
+    <section class="hg-hero">
+      <canvas class="hero-hex-canvas"></canvas>
+      <div class="hero-geo"></div>
+      <div class="container position-relative">
+        <a href="index.html" class="hg-breadcrumb">
+          <i class="fas fa-arrow-right"></i>
+          <span id="bc-home">العودة للرئيسية</span>
+        </a>
+        <span class="hg-hero-icon">
+          <i class="fa-solid fa-shield-heart" style="color: var(--gold)"></i>
+        </span>
+        <h1 id="hg-title">إرشادات صحية للحاج المصاب بالسكري</h1>
+        <p id="hg-sub">
+          دليل صحي شامل من الجمعية السعودية للسكر والغدد الصماء — قِند
+        </p>
+        <div class="gold-divider" style="margin: 0 auto 20px"></div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ══ MAIN CONTENT ══ -->
+    <section class="fade-in py-5">
+      <div class="container">
+        <!-- Phase Navigation -->
+        <div class="phase-nav" id="phaseNav">
+          <button
+            class="phase-btn active"
+            onclick="showPhase('before', this)"
+            id="pb-before"
+          >
+            <i class="fas fa-clipboard-list"></i>
+            <span id="ph-before">قبل الحج</span>
+          </button>
+          <button
+            class="phase-btn"
+            onclick="showPhase('during', this)"
+            id="pb-during"
+          >
+            <i class="fas fa-kaaba"></i>
+            <span id="ph-during">خلال الحج</span>
+          </button>
+          <button
+            class="phase-btn"
+            onclick="showPhase('firstaid', this)"
+            id="pb-firstaid"
+          >
+            <i class="fas fa-kit-medical"></i>
+            <span id="ph-firstaid">الإسعافات الأولية</span>
+          </button>
+        </div>
+
+        <!-- PHASE 1 — Before Hajj -->
+        <div class="phase-panel active" id="panel-before">
+          <div class="text-center mb-4">
+            <h2 class="hg-section-title" id="p1-title">
+              إرشادات صحية قبل الحج
+            </h2>
+            <p class="hg-section-sub" id="p1-sub">
+              استعد جيداً قبل السفر لضمان سلامتك خلال أداء الفريضة
+            </p>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-b1">١</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="b1t">استشر طبيبك قبل السفر</div>
+              <div class="hg-card-text" id="b1d">
+                إذا كنت أحد المصابين بالأمراض المزمنة استشر طبيبك للتأكد من
+                استقرار حالتك الصحية وقدرتك على الحج. وللمصاب بداء السكري ينبغي
+                استشارة طبيبك حول تعديل جرعة الدواء خلال فترة الحج.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-solid fa-stethoscope"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-b2">٢</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="b2t">
+                احمل كمية كافية من الأدوية
+              </div>
+              <div class="hg-card-text" id="b2d">
+                الحرص على أخذ كمية كافية من الأدوية إذا كنت تعاني من أحد الأمراض
+                التي تستدعي تناول أدوية بصفة مستمرة، كأمراض القلب وارتفاع ضغط
+                الدم والسكري.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-solid fa-capsules"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-b3">٣</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="b3t">احمل تقرير طبي مفصل</div>
+              <div class="hg-card-text" id="b3d">
+                الحرص على حمل تقرير مفصل يوضح الأمراض والأدوية والجرعات، حيث
+                يساعد ذلك على متابعة حالته عند الضرورة.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-regular fa-file-lines"></i
+            ></span>
+          </div>
+        </div>
+
+        <!-- PHASE 2 — During Hajj -->
+        <div class="phase-panel" id="panel-during">
+          <div class="text-center mb-4">
+            <h2 class="hg-section-title" id="p2-title">
+              إرشادات صحية خلال الحج
+            </h2>
+            <p class="hg-section-sub" id="p2-sub">
+              يمكن للمرضى المصابين بالسكري أداء فريضة الحج بعد إجراء الكشف الطبي
+              ومعرفة مدى ملاءمتهم للحج
+            </p>
+          </div>
+
+          <div class="attention-box">
+            <p id="p2-attention">
+              <strong>انتبه:</strong> يتعرض مريض السكري خلال الحج لمخاطر عدة:
+              نقص مستوى السكر في الدم نتيجة الإجهاد والحرارة وتغير نظام الطعام،
+              والإصابة بالجروح أو تقرحات في القدمين بسبب كثرة الحركة، والتسلخات
+              بسبب الازدحام والتعرق الزائد.
+            </p>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d1">١</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d1t">قِس مستوى السكر يومياً</div>
+              <div class="hg-card-text" id="d1d">
+                أخذ جهاز قياس السكر لقياس مستوى سكر الدم يومياً وبانتظام، خاصة
+                عند الشعور باختلال مستوى السكر.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-solid fa-droplet" style="color: red"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d2">٢</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d2t">ارتدِ بطاقة تعريفية</div>
+              <div class="hg-card-text" id="d2d">
+                وضع سوار حول المعصم أو حمل بطاقة تعريفية تفيد بأن الحاج مصاب
+                بالسكري ونوع العلاج، ليتسنى تقديم المساعدة اللازمة عند الحاجة.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-regular fa-address-card"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d3">٣</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d3t">احتفظ بالأدوية الكافية</div>
+              <div class="hg-card-text" id="d3d">
+                أخذ كميات كافية من أدوية السكر واتباع النظام الغذائي وفق إرشادات
+                الطبيب المختص.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-solid fa-syringe syringe"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d4">٤</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d4t">حافظ على برودة الأنسولين</div>
+              <div class="hg-card-text" id="d4d">
+                التأكد من برودة الأنسولين أثناء نقله وتخزينه عن طريق وضعه في
+                حافظة الثلج المناسبة (ترمس) أو ثلاجة في مكان الإقامة.
+              </div>
+            </div>
+            <span class="hg-card-icon">🧊</span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d5">٥</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d5t">لا تبدأ الطواف صائماً</div>
+              <div class="hg-card-text" id="d5d">
+                ينصح بعدم البدء بالطواف أو السعي إلا بعد تناول العلاج والطعام
+                الكافي، وذلك لمنع انخفاض مستوى السكر في الدم.
+              </div>
+            </div>
+            <span class="hg-card-icon">🕋</span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d6">٦</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d6t">ارتدِ جوارب مريحة</div>
+              <div class="hg-card-text" id="d6d">
+                الحرص على لبس جوارب مريحة لحماية القدمين من أي تقرحات وتجنب
+                المشي حافي القدمين.
+              </div>
+            </div>
+            <span class="hg-card-icon"><i class="fa-solid fa-socks"></i></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d7">٧</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d7t">اشرب الماء بانتظام</div>
+              <div class="hg-card-text" id="d7d">
+                شرب الماء بكميات مناسبة وبانتظام، خاصة في الأجواء الحارة خلال
+                مناسك الحج.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-solid fa-glass-water"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d8">٨</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d8t">
+                استخدم آلة حلاقة كهربائية
+              </div>
+              <div class="hg-card-text" id="d8d">
+                استخدام آلة حلاقة كهربائية خاصة للحاج لتجنب أي جروح قد تتسبب في
+                مضاعفات لمرضى السكري.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i class="fa-solid fa-bolt-lightning"></i
+            ></span>
+          </div>
+
+          <div class="hg-card">
+            <div class="hg-card-num" id="card-num-d9">٩</div>
+            <div class="hg-card-body">
+              <div class="hg-card-title" id="d9t">
+                توقف عند أعراض انخفاض السكر
+              </div>
+              <div class="hg-card-text" id="d9d">
+                التوقف المؤقت عن مواصلة أداء المناسك عند الإحساس بأعراض نقص
+                مستوى السكر في الدم.
+              </div>
+            </div>
+            <span class="hg-card-icon"
+              ><i
+                class="fa-solid fa-triangle-exclamation"
+                style="color: yellow"
+              ></i
+            ></span>
+          </div>
+        </div>
+
+        <!-- PHASE 3 — First Aid -->
+        <div class="phase-panel" id="panel-firstaid">
+          <div class="text-center mb-4">
+            <h2 class="hg-section-title" id="p3-title">
+              الإسعافات الأولية — انخفاض سكر الدم
+            </h2>
+            <p class="hg-section-sub" id="p3-sub">
+              إذا كانت نتيجة تحليل السكر منخفضة أو أحسست بأعراض انخفاض السكر،
+              اتبع هذه الخطوات
+            </p>
+          </div>
+
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-fa1">١</div>
+            <div class="fa-step-text" id="fa1">
+              رفع سكر الدم عن طريق مثلاً شرب عصير محلى أو ملعقتين عسل.
+            </div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-fa2">٢</div>
+            <div class="fa-step-text" id="fa2">
+              تناول وجبة تحتوي على كربوهيدرات للمحافظة على مستوى السكر.
+            </div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-fa3">٣</div>
+            <div class="fa-step-text" id="fa3">
+              تحليل سكر الدم بعد 15 دقيقة، في حال كانت نتيجة سكر الدم في المعدل
+              الطبيعي.
+            </div>
+          </div>
+          <div class="fa-step">
+            <div class="fa-step-num" id="card-num-fa4">٤</div>
+            <div class="fa-step-text" id="fa4">
+              في حال كانت نتيجة سكر الدم لا تزال منخفضة، عاود المحاولة برفع
+              السكر عن طريق شرب العصير المحلى أو ملعقتين عسل، والقياس بعد 15
+              دقيقة.
+            </div>
+          </div>
+          <div
+            class="fa-step"
+            style="
+              border-color: rgba(220, 50, 50, 0.35);
+              background: rgba(220, 50, 50, 0.05);
+            "
+          >
+            <div
+              class="fa-step-num"
+              id="card-num-fa5"
+              style="border-color: #e05050; color: #e05050"
+            >
+              ٥
+            </div>
+            <div class="fa-step-text" id="fa5">
+              إذا لم يتوفر الجلوكاجون ولم يستعد المريض وعيه خلال 15–20 دقيقة،
+              فيجب نقل المريض إلى المستشفى في أسرع وقت.
+            </div>
+          </div>
+        </div>
+
+        <!-- SDEA Block -->
+        <div class="sep" style="margin: 40px 0 30px"></div>
+        <div class="sdea-block">
+          <div class="sdea-logo-box">
+            <a href="https://sdea.org.sa/">
+              <img
+                src="assets/IMG/logo.png"
+                alt="شعار الجمعية السعودية للسكر"
+                onerror="this.style.display = 'none'"
+              />
+            </a>
+          </div>
+          <div class="sdea-info">
+            <div class="sdea-name" id="sdea-name">
+              الجمعية السعودية للسكر والغدد الصماء — قِند
+            </div>
+            <div class="sdea-contact">
+              <i
+                class="fas fa-phone"
+                style="color: var(--gold); margin-left: 6px; margin-right: 6px"
+              ></i>
+              053 380 3883<br />
+              <i
+                class="fas fa-globe"
+                style="color: var(--gold); margin-left: 6px; margin-right: 6px"
+              ></i>
+              <a href="https://www.sdea.org.sa" target="_blank"
+                >www.sdea.org.sa</a
+              ><br />
+              <i
+                class="fab fa-twitter"
+                style="color: var(--gold); margin-left: 6px; margin-right: 6px"
+              ></i>
+              <a href="https://twitter.com/sdea_sa" target="_blank">@sdea_sa</a>
+            </div>
+          </div>
+          <div class="sdea-qr-box">
+            <a href="https://www.linkin1.com/sdea"
+              ><img src="assets/IMG/QR-SDEA.png" alt="QR Code SDEA"
+            /></a>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.75rem;
+                text-align: center;
+                margin-top: 6px;
+              "
+              id="qr-scan"
+            >
+              امسح للزيارة
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-right"></i>
+            <span id="back-home">العودة للرئيسية</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ══ FOOTER ══ -->
+
+    <footer>
+      <div class="footer-bg"></div>
+      <div class="footer-inner">
+        <div class="container">
+          <div class="row g-5">
+            <!-- Brand col -->
+            <div class="col-lg-4">
+              <div class="footer-brand" id="footer-brand">🕋 دليل الحاج</div>
+              <p class="footer-tagline" id="ft-tagline">
+                تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم
+              </p>
+              <p class="footer-note" id="ft-note">
+                هذا الموقع صدقة جارية لخدمة حجاج بيت الله الحرام
+              </p>
+              <div class="footer-quran-badge mt-3">
+                <i class="fas fa-moon"></i>
+                <span style="font-size: 0.95rem" id="ft-ayah-badge"
+                  >وَللهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ</span
+                >
+              </div>
+              <div class="footer-social mt-4">
+                <a class="social-btn" href="https://x.com/sdea_sa" title="تويتر"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  class="social-btn"
+                  href="https://www.instagram.com/sdea_sa"
+                  title="انستغرام "
+                  ><i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  class="social-btn"
+                  href="https://api.whatsapp.com/send/?phone=966530424273&text&type=phone_number&app_absent=0"
+                  title="واتساب"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a
+                  class="social-btn"
+                  href="https://www.youtube.com/@sdea_sa"
+                  title="يوتيوب"
+                  ><i class="fa-brands fa-youtube"></i>
+                </a>
+                <a
+                  class="social-btn"
+                  href="https://www.linkin1.com/sdea"
+                  title="لينك تري"
+                  ><i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+              <!-- SDEA Logo + QR -->
+              <div class="mt-4 d-flex align-items-center gap-3 flex-wrap">
+                <a
+                  href="https://sdea.org.sa/"
+                  title="شعار الجمعية السعودية للسكر - قند."
+                >
+                  <img
+                    src="assets/IMG/logo.png"
+                    alt="SDEA قند"
+                    style="
+                      width: 80px;
+                      height: 80px;
+                      object-fit: contain;
+                      border-radius: 10px;
+                      opacity: 0.9;
+                    "
+                    onerror="this.style.display = 'none'"
+                  />
+                </a>
+                <a
+                  href="https://www.linkin1.com/sdea"
+                  title="امسح باركود الجمعية السعودية للسكر - قند"
+                >
+                  <img
+                    src="assets/IMG/QR-SDEA.png"
+                    alt="QR SDEA"
+                    style="
+                      width: 56px;
+                      height: 56px;
+                      border-radius: 8px;
+                      border: 1px solid rgba(200, 151, 42, 0.3);
+                    "
+                  />
+                </a>
+
+                <div>
+                  <div
+                    style="
+                      color: var(--gold-light);
+                      font-size: 0.8rem;
+                      font-weight: 700;
+                    "
+                  >
+                    قِند — SDEA
+                  </div>
+                  <a
+                    href="https://www.sdea.org.sa"
+                    target="_blank"
+                    style="
+                      color: var(--text-muted);
+                      font-size: 0.73rem;
+                      text-decoration: none;
+                    "
+                    >sdea.org.sa</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Links col -->
+            <div class="col-6 col-lg-2">
+              <span class="footer-col-title" id="ft-sections"
+                >أقسام الموقع</span
+              >
+              <ul class="footer-list">
+                <li>
+                  <a href="index.html#quran"
+                    ><i class="fa-solid fa-book-open"> </i>
+                    <span class="nav-q">القرآن الكريم</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#dua"
+                    ><i class="fa-solid fa-hands-praying"></i>
+                    <span class="nav-d">أدعية</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html#athkar"
+                    ><i class="fa-solid fa-sun"></i>
+                    <span class="nav-a">الأذكار</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#tasbeeh"
+                    ><i class="fa fa-circle-notch"></i>
+                    <span class="nav-t">عداد التسبيح</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="health-guide.html"
+                    ><i class="fa-solid fa-shield-heart"></i>
+                    <span class="nav-h">إرشادات صحية</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Languages col -->
+            <div class="col-6 col-lg-2">
+              <span class="footer-col-title" id="ft-langs">اللغات</span>
+              <ul class="footer-list">
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('ar', '🇸🇦', 'العربية');
+                      return false;
+                    "
+                    >🇸🇦 العربية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('en', '🇬🇧', 'English');
+                      return false;
+                    "
+                    >🇬🇧 English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('ru', '🇷🇺', 'Русский');
+                      return false;
+                    "
+                    >🇷🇺 Русский</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('fa', '🇮🇷', 'فارسی');
+                      return false;
+                    "
+                    >🇮🇷 فارسی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('tr', '🇹🇷', 'Türkçe');
+                      return false;
+                    "
+                    >🇹🇷 Türkçe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('ur', '🇵🇰', 'اردو');
+                      return false;
+                    "
+                    >🇵🇰 اردو</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Dua of the day -->
+            <div class="col-lg-4">
+              <span class="footer-col-title" id="ft-dua">دعاء اليوم</span>
+              <div
+                style="
+                  background: rgba(200, 151, 42, 0.06);
+                  border: 1px solid rgba(200, 151, 42, 0.18);
+                  border-radius: 12px;
+                  padding: 18px 20px;
+                "
+              >
+                <p
+                  style="
+                    font-size: 1.2rem;
+                    color: var(--gold-light);
+                    line-height: 2.2;
+                    direction: rtl;
+                    text-align: right;
+                    font-family: &quot;Amiri&quot;, serif;
+                    margin-bottom: 10px;
+                  "
+                  id="ft-dua-text"
+                >
+                  رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ
+                  حَسَنَةً وَقِنَا عَذَابَ النَّارِ
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.88rem">
+                  البقرة: 201
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap gap-3"
+          >
+            <p
+              style="
+                color: rgba(176, 168, 130, 0.5);
+                font-size: 0.82rem;
+                margin: 0;
+              "
+              id="ft-copyright"
+            >
+              © 1446 هـ — صُنع بحب لخدمة ضيوف الرحمن
+            </p>
+            <div class="d-flex gap-16 gap-3">
+              <a
+                href="https://www.linkin1.com/sdea"
+                class="footer-link"
+                id="ft-privacy"
+                ><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a
+              >
+              <a
+                href="mailto:sdea@sdea.org.sa"
+                class="footer-link"
+                id="ft-contact"
+                ><i class="fas fa-envelope"></i> تواصل معنا</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container" id="ft-bottom-text">
+          اللَّهُمَّ اجْعَلْهُ صَدَقَةً جَارِيَةً — تَقَبَّلَ اللَّهُ مِنَّا
+          وَمِنكُم صَالِحَ الأَعْمَال
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/index.js"></script>
+    <script src="assets/JS/health-guide.js"></script>
+  </body>
+</html>

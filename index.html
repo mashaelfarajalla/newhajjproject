@@ -1,0 +1,1608 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل الحاج | صدقة جارية</title>
+    <meta
+      name="description"
+      content="دليل الحاج الشامل — قرآن كريم، أدعية الحج، أذكار الصباح والمساء، وعداد التسبيح بست لغات. صدقة جارية لخدمة حجاج بيت الله الحرام."
+    />
+    <meta
+      name="keywords"
+      content="دليل الحاج, أدعية الحج, أذكار, القرآن الكريم, تسبيح, حج, عمرة"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="دليل الحاج الشامل | صدقة جارية" />
+    <meta
+      property="og:description"
+      content="قرآن كريم · أدعية الحج · أذكار الصباح والمساء · عداد التسبيح — بست لغات"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0d1a12" />
+    <link href="assets/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    <!-- ════════════════════════════════
+     NAVBAR 
+════════════════════════════════ -->
+    <nav class="navbar-custom">
+      <div class="navbar-inner">
+        <a href="index.html"
+          ><span class="navbar-brand-text" id="brand-name"
+            >🕋 دليل الحاج</span
+          ></a
+        >
+
+        <!-- Desktop links -->
+        <div class="navbar-desktop-links">
+          <a href="#quran" class="nav-pill">
+            <i class="fa-solid fa-book-open m-1"> </i>
+            <span class="nav-q" id="navQ"> القرآن الكريم </span></a
+          >
+          <a href="#dua" class="nav-pill"
+            ><i class="fa-solid fa-hands-praying m-1"></i>
+            <span class="nav-d">أدعية</span></a
+          >
+          <a href="#athkar" class="nav-pill"
+            ><i class="fa-solid fa-sun m-1"></i
+            ><span class="nav-a">أذكار</span></a
+          >
+          <a href="#tasbeeh" class="nav-pill"
+            ><i class="fa fa-circle-notch m-1"></i>
+            <span class="nav-t">تسبيح</span></a
+          >
+          <a href="health-guide.html" class="nav-pill">
+            <i class="fa-solid fa-shield-heart m-1"></i>
+            <span class="nav-h" id="nav-health">إرشادات صحية</span></a
+          >
+        </div>
+
+        <div class="navbar-right-group">
+          <!-- Language Dropdown -->
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-current-btn" onclick="toggleLangMenu(event)">
+              <span class="flag" id="currentFlag">🇸🇦</span>
+              <span id="currentLangName">العربية</span>
+              <i class="fas fa-chevron-down chevron"></i>
+            </button>
+            <div class="lang-menu" id="langMenu">
+              <button
+                class="lang-option active"
+                onclick="setLang('ar', '🇸🇦', 'العربية', 'rtl', this)"
+              >
+                <span class="lang-flag">🇸🇦</span> العربية
+              </button>
+              <div class="lang-divider"></div>
+              <button
+                class="lang-option"
+                onclick="setLang('en', '🇬🇧', 'English', 'ltr', this)"
+              >
+                <span class="lang-flag">🇬🇧</span> English
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('ru', '🇷🇺', 'Русский', 'ltr', this)"
+              >
+                <span class="lang-flag">🇷🇺</span> Русский
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('fa', '🇮🇷', 'فارسی', 'rtl', this)"
+              >
+                <span class="lang-flag">🇮🇷</span> فارسی
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('tr', '🇹🇷', 'Türkçe', 'ltr', this)"
+              >
+                <span class="lang-flag">🇹🇷</span> Türkçe
+              </button>
+              <button
+                class="lang-option"
+                onclick="setLang('ur', '🇵🇰', 'اردو', 'rtl', this)"
+              >
+                <span class="lang-flag">🇵🇰</span> اردو
+              </button>
+            </div>
+          </div>
+
+          <!-- Hamburger -->
+          <button
+            class="hamburger-btn"
+            id="hamburgerBtn"
+            onclick="toggleSidebar()"
+            aria-label="القائمة"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
+
+    <!-- Sidebar Drawer -->
+    <div class="sidebar-drawer" id="sidebarDrawer">
+      <div class="sidebar-top">
+        <div class="sidebar-kaaba-bg">🕋</div>
+        <div class="sidebar-brand">
+          <a href="index.html" style="color: var(--gold)" id="brand-name">
+            🕋 دليل الحاج
+          </a>
+        </div>
+        <div class="sidebar-tagline">تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم</div>
+      </div>
+
+      <div class="sidebar-links">
+        <a href="#quran" class="nav-pill sidebar-item" onclick="closeSidebar()">
+          <div class="sidebar-icon si-quran">
+            <i class="fa-solid fa-book-open"> </i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-q">القرآن الكريم</span>
+            <span class="s-sub" id="sidebar-sub1">٥ سور + القرآن كاملاً</span>
+          </div>
+        </a>
+        <a href="#dua" class="nav-pill sidebar-item" onclick="closeSidebar()">
+          <div class="sidebar-icon si-dua">
+            <i class="fa-solid fa-hands-praying"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-d">الأدعية </span>
+            <span class="s-sub" id="sidebar-sub2">دعاء لكل موضع</span>
+          </div>
+        </a>
+        <a
+          href="#athkar"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon si-athkar">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-a">أذكار الصباح والمساء</span>
+            <span class="s-sub" id="sidebar-sub3">حصّن يومك بالذكر</span>
+          </div>
+        </a>
+        <div class="sidebar-divider"></div>
+        <a
+          href="#tasbeeh"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon si-tasb">
+            <i class="fa fa-circle-notch"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main nav-t">عداد التسبيح</span>
+            <span class="s-sub" id="sidebar-sub4">سبّح بحمد ربك</span>
+          </div>
+        </a>
+        <a
+          href="health-guide.html"
+          class="nav-pill sidebar-item"
+          onclick="closeSidebar()"
+        >
+          <div class="sidebar-icon sb-health">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <div class="sidebar-text">
+            <span class="s-main" id="sb-health">إرشادات صحية</span>
+            <span class="s-sub" id="sb-health-sub">للحاج المصاب بالسكري</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-dua-box">
+          <div class="dua-ar">
+            رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً
+          </div>
+          <div class="dua-ref">البقرة: ٢٠١</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════
+  HERO
+════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-kaaba">🕋</div>
+      <div class="container position-relative">
+        <div class="hero-badge">
+          <i class="fas fa-moon"></i>
+          <span id="hero-badge">صدقة جارية لخدمة حجاج بيت الله</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">دليل الحاج الشامل</h1>
+        <p class="hero-ayah" id="hero-ayah">
+          ﴿ وَأَذِّن فِي النَّاسِ بِالْحَجِّ يَأْتُوكَ رِجَالًا وَعَلَىٰ كُلِّ
+          ضَامِرٍ يَأْتِينَ مِن كُلِّ فَجٍّ عَمِيقٍ ﴾
+        </p>
+        <p class="hero-sub" id="hero-sub">
+          قرآن كريم · أدعية الحج · أذكار · تسبيح — بست لغات
+        </p>
+        <div class="hero-btns">
+          <button
+            class="btn-gold"
+            onclick="
+              document
+                .getElementById('quran')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            <i class="fa-solid fa-book-open"></i>
+            <span id="btn-start">ابدأ الآن</span>
+          </button>
+          <button
+            class="btn-outline-gold"
+            onclick="
+              document
+                .getElementById('tasbeeh')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            <i class="fa fa-circle-notch"></i>
+            <span id="btn-tasbeeh">عداد التسبيح</span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="scroll-hint"
+        onclick="
+          document
+            .getElementById('stats-section')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        <i class="fas fa-chevron-down"></i>
+        <span id="scroll-discover">اكتشف</span>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- STATS -->
+    <section class="py-5 fade-in" id="stats-section">
+      <div class="container">
+        <div class="stats-row">
+          <div class="row text-center gy-4">
+            <div class="col-6 col-md-3">
+              <span class="stat-num">6</span
+              ><span class="stat-label" id="s1">لغات مدعومة</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <span class="stat-num">114</span
+              ><span class="stat-label" id="s2">سورة قرآنية</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <span class="stat-num"> +100</span
+              ><span class="stat-label" id="s3">أدعية متنوعة</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <span class="stat-num">∞</span
+              ><span class="stat-label" id="s4">أجر متجدد</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- FEATURES -->
+    <section class="fade-in">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" id="feat-label">ما يقدمه الدليل</div>
+          <h2 class="section-title" id="feat-title">
+            كل ما يحتاجه الحاج في مكان واحد
+          </h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div
+              class="feature-card"
+              onclick="
+                document
+                  .getElementById('quran')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              <span class="feature-icon"
+                ><i class="fa-solid fa-book-open"> </i
+              ></span>
+              <div class="feature-title" id="f1t">القرآن الكريم</div>
+              <div class="feature-desc" id="f1d">
+                ٥ سور مختارة + القرآن كاملاً بست لغات
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="feature-card"
+              onclick="
+                document
+                  .getElementById('dua')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              <span class="feature-icon">
+                <i class="fa-solid fa-hands-praying"></i
+              ></span>
+
+              <div class="feature-title" id="f2t">أدعية متنوعة</div>
+              <div class="feature-desc" id="f2d">
+                دعاء لكل موضع من مناسك الحج + ادعية عرفة + ادعية قرانية + ادعية
+                نبوية + دعاء ختم القرآن الكريم
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="feature-card"
+              onclick="
+                document
+                  .getElementById('athkar')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              <span class="feature-icon"><i class="fa-solid fa-sun"></i></span>
+              <div class="feature-title" id="f3t">أذكار</div>
+              <div class="feature-desc" id="f3d">
+                أذكار الصباح والمساء المأثورة
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="feature-card"
+              onclick="
+                document
+                  .getElementById('tasbeeh')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              <span class="feature-icon"
+                ><i class="fa fa-circle-notch"></i
+              ></span>
+
+              <div class="feature-title" id="f4t">عداد التسبيح</div>
+              <div class="feature-desc" id="f4d">
+                عدّاد رقمي مع أهداف التسبيح
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="feature-card"
+              onclick="window.location.href = 'health-guide.html'"
+              style="border-color: rgba(200, 151, 42, 0.35)"
+            >
+              <span class="feature-icon"
+                ><i class="fa-solid fa-shield-heart"></i
+              ></span>
+              <div class="feature-title" id="f5t">إرشادات صحية</div>
+              <div class="feature-desc" id="f5d">
+                دليل صحي للحاج المصاب بالسكري
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ════════════════════════════════
+  QURAN
+════════════════════════════════ -->
+    <section id="quran" class="fade-in">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" id="q-section-label">القرآن الكريم</div>
+          <h2 class="section-title" id="q-title">سور قرآنية مختارة</h2>
+          <p class="section-desc" id="q-desc">
+            آيات مباركة عن الحج والعبادة — اختر السورة واقرأ بلغتك
+          </p>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="content-card">
+          <div class="bismillah-banner">
+            بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+          </div>
+          <div class="surah-grid" id="surahGrid">
+            <button
+              class="surah-btn active"
+              onclick="showSurah(0, this)"
+              id="surah-btn-0"
+            >
+              <span class="surah-num">١</span>الفاتحة
+            </button>
+            <button
+              class="surah-btn"
+              onclick="showSurah(1, this)"
+              id="surah-btn-1"
+            >
+              <span class="surah-num">٢</span> آية الكرسي
+            </button>
+            <button
+              class="surah-btn"
+              onclick="showSurah(2, this)"
+              id="surah-btn-2"
+            >
+              <span class="surah-num">١١٢</span>الإخلاص
+            </button>
+            <button
+              class="surah-btn"
+              onclick="showSurah(3, this)"
+              id="surah-btn-3"
+            >
+              <span class="surah-num">١١٣</span>الفلق
+            </button>
+            <button
+              class="surah-btn"
+              onclick="showSurah(4, this)"
+              id="surah-btn-4"
+            >
+              <span class="surah-num">١١٤</span>الناس
+            </button>
+          </div>
+          <div id="quranDisplay" class="quran-display"></div>
+          <button class="btn-full-quran" onclick="openQuranModal()">
+            <i class="fas fa-list"></i>
+            <span id="full-quran-btn-text">القرآن الكريم كامل — ١١٤ سورة</span>
+            <i class="fas fa-arrow-left" style="color: var(--gold)"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ════════════════════════════════
+  DUA
+════════════════════════════════ -->
+    <section id="dua" class="fade-in">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" id="d-section-label">أدعية الحج</div>
+          <h2 class="section-title" id="d-title">أدعية متنوعة</h2>
+          <p class="section-desc" id="d-desc">
+            اختر موضعك من مناسك الحج واقرأ الدعاء المناسب
+          </p>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="content-card">
+          <div class="subtabs" id="duaCatTabs"></div>
+          <div class="subtabs subtabs-mini" id="duaSubtabs"></div>
+          <div id="duaDisplay"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ════════════════════════════════
+  ATHKAR
+════════════════════════════════ -->
+    <section id="athkar" class="fade-in">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" id="a-section-label">الأذكار</div>
+          <h2 class="section-title" id="a-title">أذكار الصباح والمساء</h2>
+          <p class="section-desc" id="a-desc">حصّن نفسك بذكر الله في كل يوم</p>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="content-card">
+          <div class="subtabs">
+            <button
+              class="stab active"
+              id="tab-m"
+              onclick="switchATime('sabah', this)"
+            >
+              أذكار الصباح
+            </button>
+            <button
+              class="stab"
+              id="tab-e"
+              onclick="switchATime('masaa', this)"
+            >
+              أذكار المساء
+            </button>
+          </div>
+          <div id="athkarDisplay"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ════════════════════════════════
+  TASBEEH COUNTER
+════════════════════════════════ -->
+    <section id="tasbeeh" class="fade-in">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" id="tb-section-label">عداد التسبيح</div>
+          <h2 class="section-title" id="tb-title">سبّح بحمد ربك</h2>
+          <p class="section-desc" id="tb-desc">
+            اختر الذكر واضغط للعد — يُحفظ تلقائياً
+          </p>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="tasbeeh-card">
+              <!-- Dhikr options -->
+              <div class="dhikr-select-grid" id="dhikrGrid">
+                <button class="dhikr-opt active" onclick="selectDhikr(0, this)">
+                  سُبْحَانَ اللَّهِ
+                </button>
+                <button class="dhikr-opt" onclick="selectDhikr(1, this)">
+                  الْحَمْدُ لِلَّهِ
+                </button>
+                <button class="dhikr-opt" onclick="selectDhikr(2, this)">
+                  اللَّهُ أَكْبَرُ
+                </button>
+                <button class="dhikr-opt" onclick="selectDhikr(3, this)">
+                  لَا إِلَهَ إِلَّا اللَّهُ
+                </button>
+                <button class="dhikr-opt" onclick="selectDhikr(4, this)">
+                  أَسْتَغْفِرُ اللَّهَ
+                </button>
+                <button class="dhikr-opt" onclick="selectDhikr(5, this)">
+                  لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ
+                </button>
+              </div>
+
+              <!-- Goal -->
+              <div class="goal-selector" id="goalSelector">
+                <button
+                  class="goal-btn active"
+                  onclick="setGoal(33, this)"
+                  id="goal-33"
+                >
+                  ٣٣
+                </button>
+                <button
+                  class="goal-btn"
+                  onclick="setGoal(99, this)"
+                  id="goal-99"
+                >
+                  ٩٩
+                </button>
+                <button
+                  class="goal-btn"
+                  onclick="setGoal(100, this)"
+                  id="goal-100"
+                >
+                  ١٠٠
+                </button>
+                <button
+                  class="goal-btn"
+                  onclick="setGoal(500, this)"
+                  id="goal-500"
+                >
+                  ٥٠٠
+                </button>
+                <button
+                  class="goal-btn"
+                  onclick="setGoal(1000, this)"
+                  id="goal-1000"
+                >
+                  ١٠٠٠
+                </button>
+              </div>
+
+              <!-- Ring counter -->
+              <div class="counter-ring-wrap">
+                <svg class="counter-ring-svg" viewBox="0 0 220 220">
+                  <circle class="ring-bg" cx="110" cy="110" r="96" />
+                  <circle
+                    class="ring-progress"
+                    id="ringProgress"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                    stroke-dasharray="603.19"
+                    stroke-dashoffset="603.19"
+                  />
+                </svg>
+                <div class="counter-inner">
+                  <div class="counter-dhikr-name" id="dhikrShortName">
+                    سبحان الله
+                  </div>
+                  <div class="counter-number" id="counterNum">0</div>
+                  <div class="counter-goal" id="counterGoal">/ ٣٣</div>
+                </div>
+              </div>
+
+              <!-- Tap button -->
+              <button
+                class="tasbeeh-tap-btn"
+                id="tapBtn"
+                onclick="tapCounter()"
+              >
+                <i class="fa fa-circle-notch"></i>
+                <span class="tap-label" id="tap-label">اضغط للتسبيح</span>
+              </button>
+
+              <!-- Controls -->
+              <div class="counter-controls">
+                <button class="ctrl-btn" onclick="undoCounter()">
+                  <i class="fas fa-undo me-1"></i
+                  ><span id="ctrl-undo">تراجع</span>
+                </button>
+                <button class="ctrl-btn danger" onclick="resetCounter()">
+                  <i class="fas fa-redo me-1"></i
+                  ><span id="ctrl-reset">إعادة</span>
+                </button>
+              </div>
+
+              <!-- Total sessions -->
+              <div
+                style="
+                  margin-top: 20px;
+                  color: var(--text-muted);
+                  font-size: 0.88rem;
+                "
+              >
+                <span id="total-label">المجموع الكلي:</span>
+                <span
+                  id="totalCount"
+                  style="
+                    color: var(--gold);
+                    font-weight: 700;
+                    margin-right: 6px;
+                    margin-left: 6px;
+                  "
+                  >0</span
+                >
+                <span id="sessions-label">تسبيحة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+    <!-- ══ FOOTER ══ -->
+
+    <footer>
+      <div class="footer-bg"></div>
+      <div class="footer-inner">
+        <div class="container">
+          <div class="row g-5">
+            <!-- Brand col -->
+            <div class="col-lg-4">
+              <div class="footer-brand" id="footer-brand">🕋 دليل الحاج</div>
+              <p class="footer-tagline" id="ft-tagline">
+                تَقَبَّلَ اللّهُ مِنَّا وَمِنكُم
+              </p>
+              <p class="footer-note" id="ft-note">
+                هذا الموقع صدقة جارية لخدمة حجاج بيت الله الحرام
+              </p>
+              <div class="footer-quran-badge mt-3">
+                <i class="fas fa-moon"></i>
+                <span style="font-size: 0.95rem" id="ft-ayah-badge"
+                  >وَللهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ</span
+                >
+              </div>
+              <div class="footer-social mt-4">
+                <a class="social-btn" href="https://x.com/sdea_sa" title="تويتر"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  class="social-btn"
+                  href="https://www.instagram.com/sdea_sa"
+                  title="انستغرام "
+                  ><i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  class="social-btn"
+                  href="https://api.whatsapp.com/send/?phone=966530424273&text&type=phone_number&app_absent=0"
+                  title="واتساب"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a
+                  class="social-btn"
+                  href="https://www.youtube.com/@sdea_sa"
+                  title="يوتيوب"
+                  ><i class="fa-brands fa-youtube"></i>
+                </a>
+                <a
+                  class="social-btn"
+                  href="https://www.linkin1.com/sdea"
+                  title="لينك تري"
+                  ><i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+              <!-- SDEA Logo + QR -->
+              <div class="mt-4 d-flex align-items-center gap-3 flex-wrap">
+                <a
+                  href="https://sdea.org.sa/"
+                  title="شعار الجمعية السعودية للسكر - قند."
+                >
+                  <img
+                    src="assets/IMG/logo.png"
+                    alt="SDEA قند"
+                    style="
+                      width: 80px;
+                      height: 80px;
+                      object-fit: contain;
+                      border-radius: 10px;
+                      opacity: 0.9;
+                    "
+                    onerror="this.style.display = 'none'"
+                  />
+                </a>
+                <a
+                  href="https://www.linkin1.com/sdea"
+                  title="امسح باركود الجمعية السعودية للسكر - قند"
+                >
+                  <img
+                    src="assets/IMG/QR-SDEA.png"
+                    alt="QR SDEA"
+                    style="
+                      width: 56px;
+                      height: 56px;
+                      border-radius: 8px;
+                      border: 1px solid rgba(200, 151, 42, 0.3);
+                    "
+                  />
+                </a>
+
+                <div>
+                  <div
+                    style="
+                      color: var(--gold-light);
+                      font-size: 0.8rem;
+                      font-weight: 700;
+                    "
+                  >
+                    قِند — SDEA
+                  </div>
+                  <a
+                    href="https://www.sdea.org.sa"
+                    target="_blank"
+                    style="
+                      color: var(--text-muted);
+                      font-size: 0.73rem;
+                      text-decoration: none;
+                    "
+                    >sdea.org.sa</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Links col -->
+            <div class="col-6 col-lg-2">
+              <span class="footer-col-title" id="ft-sections"
+                >أقسام الموقع</span
+              >
+              <ul class="footer-list">
+                <li>
+                  <a href="#quran"
+                    ><i class="fa-solid fa-book-open"></i>
+                    <span class="nav-q">القرآن الكريم</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#dua"
+                    ><i class="fa-solid fa-hands-praying"></i>
+                    <span class="nav-d">أدعية</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#athkar"
+                    ><i class="fa-solid fa-sun"></i>
+                    <span class="nav-a">الأذكار</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#tasbeeh"
+                    ><i class="fa fa-circle-notch"></i>
+                    <span class="nav-t">عداد التسبيح</span></a
+                  >
+                </li>
+                <li>
+                  <a href="health-guide.html"
+                    ><i class="fa-solid fa-shield-heart"></i>
+                    <span class="nav-h">إرشادات صحية</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Languages col -->
+            <div class="col-6 col-lg-2">
+              <span class="footer-col-title" id="ft-langs">اللغات</span>
+              <ul class="footer-list">
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('ar', '🇸🇦', 'العربية');
+                      return false;
+                    "
+                    >🇸🇦 العربية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('en', '🇬🇧', 'English');
+                      return false;
+                    "
+                    >🇬🇧 English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('ru', '🇷🇺', 'Русский');
+                      return false;
+                    "
+                    >🇷🇺 Русский</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('fa', '🇮🇷', 'فارسی');
+                      return false;
+                    "
+                    >🇮🇷 فارسی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('tr', '🇹🇷', 'Türkçe');
+                      return false;
+                    "
+                    >🇹🇷 Türkçe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="
+                      footerSetLang('ur', '🇵🇰', 'اردو');
+                      return false;
+                    "
+                    >🇵🇰 اردو</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Dua of the day -->
+            <div class="col-lg-4">
+              <span class="footer-col-title" id="ft-dua">دعاء اليوم</span>
+              <div
+                style="
+                  background: rgba(200, 151, 42, 0.06);
+                  border: 1px solid rgba(200, 151, 42, 0.18);
+                  border-radius: 12px;
+                  padding: 18px 20px;
+                "
+              >
+                <p
+                  style="
+                    font-size: 1.2rem;
+                    color: var(--gold-light);
+                    line-height: 2.2;
+                    direction: rtl;
+                    text-align: right;
+                    font-family: &quot;Amiri&quot;, serif;
+                    margin-bottom: 10px;
+                  "
+                >
+                  رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ
+                  حَسَنَةً وَقِنَا عَذَابَ النَّارِ
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.88rem">
+                  البقرة: 201
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap gap-3"
+          >
+            <p
+              style="
+                color: rgba(176, 168, 130, 0.5);
+                font-size: 0.82rem;
+                margin: 0;
+              "
+              id="ft-copyright"
+            >
+              © 1446 هـ — صُنع بحب لخدمة ضيوف الرحمن
+            </p>
+            <div class="d-flex gap-16 gap-3">
+              <a
+                href="https://www.linkin1.com/sdea"
+                id="ft-privacy"
+                class="footer-link"
+                ><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a
+              >
+              <a
+                href="mailto:sdea@sdea.org.sa"
+                id="ft-contact"
+                class="footer-link"
+                ><i class="fas fa-envelope"></i> تواصل معنا</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container" id="ftBottomText">
+          اللَّهُمَّ اجْعَلْهُ صَدَقَةً جَارِيَةً — تَقَبَّلَ اللَّهُ مِنَّا
+          وَمِنكُم صَالِحَ الأَعْمَال
+        </div>
+      </div>
+    </footer>
+
+    <!-- ════════════════════════════════
+  FULL QURAN MODAL
+════════════════════════════════ -->
+    <div class="modal-overlay" id="quranModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <div class="modal-title-text-el">
+            <i class="fas fa-list"></i>
+            <span id="modal-title-text">القرآن الكريم كامل</span>
+          </div>
+          <button class="modal-close" onclick="closeQuranModal()">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-sidebar">
+            <input
+              class="modal-search"
+              id="modalSearch"
+              placeholder="ابحث..."
+              oninput="filterModalSurahs(this.value)"
+            />
+            <div id="modalSurahList"></div>
+          </div>
+          <div class="modal-content-area">
+            <div id="modalAyahDisplay">
+              <div
+                style="
+                  text-align: center;
+                  color: var(--text-muted);
+                  padding: 60px 20px;
+                "
+              >
+                اختر سورة من القائمة
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ════════════════════════════════
+  POPUP: تنبيه مرضى السكري
+════════════════════════════════ -->
+    <div
+      id="diabetesAlertOverlay"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.72);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      "
+    >
+      <div
+        style="
+          background: linear-gradient(145deg, #0d1a12, #1a2e20);
+          border: 1.5px solid rgba(200, 151, 42, 0.45);
+          border-radius: 22px;
+          max-width: 440px;
+          width: 100%;
+          padding: 36px 30px 28px;
+          text-align: center;
+          font-family: &quot;Amiri&quot;, serif;
+          direction: rtl;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+          position: relative;
+          animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+        "
+      >
+        <!-- أيقونة -->
+        <div
+          style="
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #c8972a, #a07020);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(200, 151, 42, 0.35);
+          "
+        >
+          <i class="fa-solid fa-stethoscope"></i>
+        </div>
+
+        <!-- العنوان -->
+        <h2
+          style="
+            color: #e8c060;
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+          "
+          id="popup-diabetes-title"
+        >
+          تنبيه مهم لمرضى السكري
+        </h2>
+
+        <!-- النص -->
+        <p
+          style="
+            color: #f0ead6;
+            font-size: 1.05rem;
+            line-height: 2;
+            margin-bottom: 22px;
+          "
+          id="popup-diabetes-body"
+        >
+          إذا كنت
+          <strong style="color: #e8c060">مصاباً بداء السكري</strong>،<br />
+          يُنصح بقراءة <strong>إرشادات الحج الصحية</strong> الخاصة بك<br />
+          قبل البدء — لضمان سلامتك في رحلتك المباركة.
+        </p>
+
+        <!-- الأزرار -->
+        <div
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="health-guide.html"
+            id="popup-diabetes-btn"
+            style="
+              background: linear-gradient(135deg, #c8972a, #a07020);
+              color: #fff;
+              border: none;
+              padding: 12px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              font-weight: 700;
+              cursor: pointer;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              box-shadow: 0 4px 15px rgba(200, 151, 42, 0.4);
+              transition: opacity 0.2s;
+            "
+            onmouseover="this.style.opacity = '.85'"
+            onmouseout="this.style.opacity = '1'"
+          >
+            <i class="fa-solid fa-shield-heart"></i>
+            اقرأ الإرشادات
+          </a>
+          <button
+            onclick="closeDiabetesAlert()"
+            id="popup-diabetes-close"
+            style="
+              background: transparent;
+              color: #b0a882;
+              border: 1.5px solid rgba(176, 168, 130, 0.35);
+              padding: 12px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              cursor: pointer;
+              transition: all 0.2s;
+            "
+            onmouseover="
+              this.style.borderColor = 'rgba(176,168,130,0.7)';
+              this.style.color = '#f0ead6';
+            "
+            onmouseout="
+              this.style.borderColor = 'rgba(176,168,130,0.35)';
+              this.style.color = '#b0a882';
+            "
+          >
+            إغلاق
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════
+  POPUP: تذكير يوم عرفة
+════════════════════════════════ -->
+    <div
+      id="arafatAlertOverlay"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.78);
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      "
+    >
+      <div
+        style="
+          background: linear-gradient(145deg, #0a1a10, #162b1c);
+          border: 1.5px solid rgba(200, 151, 42, 0.55);
+          border-radius: 22px;
+          max-width: 460px;
+          width: 100%;
+          padding: 36px 30px 28px;
+          text-align: center;
+          font-family: &quot;Amiri&quot;, serif;
+          direction: rtl;
+          box-shadow:
+            0 0 60px rgba(200, 151, 42, 0.18),
+            0 20px 60px rgba(0, 0, 0, 0.6);
+          position: relative;
+          animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+        "
+      >
+        <!-- نجوم خلفية -->
+        <div
+          style="
+            position: absolute;
+            top: 14px;
+            left: 18px;
+            font-size: 1.1rem;
+            opacity: 0.5;
+          "
+        >
+          ✨
+        </div>
+        <div
+          style="
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            font-size: 1.1rem;
+            opacity: 0.5;
+          "
+        >
+          ✨
+        </div>
+
+        <!-- أيقونة -->
+        <div
+          style="
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #c8972a, #6b4a0f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 2.2rem;
+            box-shadow: 0 0 30px rgba(200, 151, 42, 0.5);
+          "
+        >
+          🌙
+        </div>
+
+        <!-- العنوان -->
+        <h2
+          style="
+            color: #e8c060;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: 1px;
+          "
+          id="popup-arafat-title"
+        >
+          يوم عرفة المبارك
+        </h2>
+        <p
+          style="
+            color: rgba(200, 151, 42, 0.75);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+          "
+        >
+          ٩ ذو الحجة ١٤٤٧ هـ
+        </p>
+
+        <!-- النص -->
+        <p
+          style="
+            color: #f0ead6;
+            font-size: 1.1rem;
+            line-height: 2.1;
+            margin-bottom: 24px;
+          "
+          id="popup-arafat-body"
+        >
+          اليوم <strong style="color: #e8c060">يوم عرفة</strong> — أعظم أيام
+          العام 🌿<br />
+          لا تفوّت قراءة <strong>أدعية يوم عرفة</strong> واغتنم<br />
+          هذا اليوم بالذكر والدعاء والاستغفار.
+        </p>
+
+        <!-- الأزرار -->
+        <div
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="#dua"
+            id="popup-arafat-btn"
+            onclick="
+              closeArafatAlert();
+              document
+                .getElementById('dua')
+                .scrollIntoView({ behavior: 'smooth' });
+              setTimeout(
+                () =>
+                  selectDuaCat(
+                    1,
+                    document.querySelectorAll('#duaCatTabs .stab')[1],
+                  ),
+                500,
+              );
+            "
+            style="
+              background: linear-gradient(135deg, #c8972a, #a07020);
+              color: #fff;
+              border: none;
+              padding: 13px 28px;
+              border-radius: 50px;
+              font-size: 1.05rem;
+              font-family: &quot;Amiri&quot;, serif;
+              font-weight: 700;
+              cursor: pointer;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              box-shadow: 0 4px 20px rgba(200, 151, 42, 0.45);
+              transition: opacity 0.2s;
+            "
+            onmouseover="this.style.opacity = '.85'"
+            onmouseout="this.style.opacity = '1'"
+          >
+            <i class="fas fa-hands-praying"></i> اقرأ أدعية عرفة
+          </a>
+          <button
+            onclick="closeArafatAlert()"
+            style="
+              background: transparent;
+              color: #b0a882;
+              border: 1.5px solid rgba(176, 168, 130, 0.35);
+              padding: 13px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              cursor: pointer;
+              transition: all 0.2s;
+            "
+            onmouseover="
+              this.style.borderColor = 'rgba(176,168,130,0.7)';
+              this.style.color = '#f0ead6';
+            "
+            onmouseout="
+              this.style.borderColor = 'rgba(176,168,130,0.35)';
+              this.style.color = '#b0a882';
+            "
+            id="popup-arafat-close"
+          >
+            لاحقاً
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.82) translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+    </style>
+
+    <!-- ════ POPUP: أذكار الصباح ════ -->
+    <div
+      id="morningAthkarOverlay"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 9998;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      "
+    >
+      <div
+        style="
+          background: linear-gradient(145deg, #0d1a12, #1a2e20);
+          border: 1.5px solid rgba(200, 151, 42, 0.45);
+          border-radius: 22px;
+          max-width: 440px;
+          width: 100%;
+          padding: 36px 30px 28px;
+          text-align: center;
+          font-family: &quot;Amiri&quot;, serif;
+          direction: rtl;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+          animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+        "
+      >
+        <div
+          style="
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f5a623, #c8972a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(245, 166, 35, 0.4);
+          "
+        >
+          🌅
+        </div>
+        <h2
+          style="
+            color: #e8c060;
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+          "
+          id="popup-morning-title"
+        >
+          أذكار الصباح
+        </h2>
+        <p
+          style="
+            color: #f0ead6;
+            font-size: 1.05rem;
+            line-height: 2;
+            margin-bottom: 22px;
+          "
+          id="popup-morning-body"
+        >
+          أصبحتَ وأصبح الملك لله 🌿<br />
+          لا تنسَ قراءة <strong style="color: #e8c060">أذكار الصباح</strong
+          ><br />
+          وابدأ يومك بذكر الله.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="#morning-athkar"
+            onclick="
+              closeMorningAthkar();
+              document.getElementById('tab-m').click();
+              document
+                .getElementById('athkar')
+                .scrollIntoView({ behavior: 'smooth' });
+            "
+            style="
+              background: linear-gradient(135deg, #f5a623, #c8972a);
+              color: #fff;
+              padding: 12px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              font-weight: 700;
+              cursor: pointer;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              box-shadow: 0 4px 15px rgba(245, 166, 35, 0.4);
+              transition: opacity 0.2s;
+            "
+            id="popup-morning-btn"
+          >
+            🌞 اقرأ الآن
+          </a>
+          <button
+            onclick="closeMorningAthkar()"
+            style="
+              background: transparent;
+              color: #b0a882;
+              border: 1.5px solid rgba(176, 168, 130, 0.35);
+              padding: 12px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              cursor: pointer;
+            "
+            id="popup-morning-close"
+          >
+            لاحقاً
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════ POPUP: أذكار المساء ════ -->
+    <div
+      id="eveningAthkarOverlay"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.78);
+        z-index: 9998;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      "
+    >
+      <div
+        style="
+          background: linear-gradient(145deg, #0a0d1a, #141a2e);
+          border: 1.5px solid rgba(120, 100, 200, 0.45);
+          border-radius: 22px;
+          max-width: 440px;
+          width: 100%;
+          padding: 36px 30px 28px;
+          text-align: center;
+          font-family: &quot;Amiri&quot;, serif;
+          direction: rtl;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
+          animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+        "
+      >
+        <div
+          style="
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6b5ce7, #a084dc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(107, 92, 231, 0.45);
+          "
+        >
+          🌙
+        </div>
+        <h2
+          style="
+            color: #c4b5fd;
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+          "
+          id="popup-evening-title"
+        >
+          أذكار المساء
+        </h2>
+        <p
+          style="
+            color: #f0ead6;
+            font-size: 1.05rem;
+            line-height: 2;
+            margin-bottom: 22px;
+          "
+          id="popup-evening-body"
+        >
+          أمسيتَ وأمسى الملك لله 🌿<br />
+          لا تنسَ قراءة <strong style="color: #c4b5fd">أذكار المساء</strong
+          ><br />
+          واختم يومك بذكر الله.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="#evening-athkar"
+            onclick="
+              closeEveningAthkar();
+              document.getElementById('tab-e').click();
+              document
+                .getElementById('athkar')
+                .scrollIntoView({ behavior: 'smooth' });
+            "
+            style="
+              background: linear-gradient(135deg, #6b5ce7, #a084dc);
+              color: #fff;
+              padding: 12px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              font-weight: 700;
+              cursor: pointer;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              box-shadow: 0 4px 15px rgba(107, 92, 231, 0.4);
+              transition: opacity 0.2s;
+            "
+            id="popup-evening-btn"
+          >
+            🌙 اقرأ الآن
+          </a>
+          <button
+            onclick="closeEveningAthkar()"
+            style="
+              background: transparent;
+              color: #b0a882;
+              border: 1.5px solid rgba(176, 168, 130, 0.35);
+              padding: 12px 26px;
+              border-radius: 50px;
+              font-size: 1rem;
+              font-family: &quot;Amiri&quot;, serif;
+              cursor: pointer;
+            "
+            id="popup-evening-close"
+          >
+            لاحقاً
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/index.js"></script>
+  </body>
+</html>
