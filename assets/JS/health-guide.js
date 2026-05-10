@@ -63,7 +63,7 @@ const HG = {
     fa2: "تناول وجبة تحتوي على كربوهيدرات للمحافظة على مستوى السكر.",
     fa3: "تحليل سكر الدم بعد 15 دقيقة، في حال كانت نتيجة سكر الدم في المعدل الطبيعي.",
     fa4: "في حال كانت نتيجة سكر الدم لا تزال منخفضة، عاود المحاولة برفع السكر عن طريق شرب العصير المحلى أو ملعقتين عسل، والقياس بعد 15 دقيقة.",
-    fa5: "إذا لم يتوفر الجلوكاجون ولم يستعد المريض وعيه خلال 15–20 دقيقة، فيجب نقل المريض إلى المستشفى في أسرع وقت.",
+    fa5: "إذا لم يتوفر الجلوكاجون ولم يستعد المريض وعيه خلال 15–20 دقيقة، فيجب نقل المريض إلى المستشفى في أسرع وقت.\n\nإبرة الجلوكاجون: تُستخدم كإسعاف طارئ عند انخفاض السكر الشديد، خاصة عند فقدان الوعي أو عدم القدرة على الأكل أو الشرب.",
     sdeaName: "الجمعية السعودية للسكر والغدد الصماء — قِند",
     qrScan: "امسح للزيارة",
     backHome: "العودة للرئيسية",
@@ -86,6 +86,29 @@ const HG = {
       "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
     ftDuaRef: "البقرة: 201",
     sidebarDuaRef: "البقرة: ٢٠١",
+
+    d9d: "التوقف المؤقت عن مواصلة أداء المناسك عند الإحساس بأعراض نقص مستوى السكر في الدم.",
+    d9symptoms_title: "أعراض انخفاض السكر:",
+    d9symptoms:
+      "التعرّق الشديد المفاجئ • الرجفة أو رعشة اليد • الدوخة وعدم الاتزان • الجوع الشديد • خفقان القلب • التعب أو ضعف الجسم • تشوش التفكير • زغللة النظر • تغير السلوك",
+    d9severe_title: "أعراض خطيرة:",
+    d9severe: "عدم القدرة على الكلام أو المشي • فقدان الوعي • التشنجات",
+
+    d10t: "انتبه لأعراض ارتفاع السكر",
+    d10d: "يتعرض مريض السكري خلال الحج لارتفاع السكر بسبب الإجهاد وتغير النظام الغذائي.",
+    d10symptoms_title: "أعراض ارتفاع السكر:",
+    d10symptoms:
+      "العطش الشديد • كثرة التبول • جفاف الفم • التعب والخمول • زغللة النظر",
+    d10manage_title: "التعامل مع الارتفاع خلال الحج:",
+    d10manage:
+      "التوقف للراحة • شرب الماء • قياس السكر • الالتزام بالعلاج أو الأنسولين • مراجعة الطبيب عند استمرار الأعراض",
+
+    p3HighTitle: "التعامل مع ارتفاع السكر خلال الحج",
+    h_fa1: "التوقف للراحة",
+    h_fa2: "شرب الماء",
+    h_fa3: "قياس السكر",
+    h_fa4: "الالتزام بالعلاج أو الأنسولين",
+    h_fa5: "مراجعة الطبيب عند استمرار الأعراض",
   },
   en: {
     dir: "ltr",
@@ -150,7 +173,7 @@ const HG = {
     fa2: "Eat a carbohydrate-rich meal to maintain blood sugar levels.",
     fa3: "Recheck your blood sugar after 15 minutes if the initial reading was normal.",
     fa4: "If the reading remains low, repeat with juice or honey and recheck after 15 minutes.",
-    fa5: "If glucagon is unavailable and the patient does not regain consciousness within 15–20 minutes, transfer the patient to the hospital immediately.",
+    fa5: "If glucagon is unavailable and the patient does not regain consciousness within 15–20 minutes, transfer to hospital immediately.\n\nGlucagon injection: Used as emergency treatment for severe hypoglycemia, especially if the patient is unconscious or unable to eat or drink.",
     sdeaName: "Saudi Diabetes & Endocrine Association — QAND",
     qrScan: "Scan to visit",
     backHome: "Back to Home",
@@ -172,6 +195,28 @@ const HG = {
       "Our Lord, give us good in this world and good in the Hereafter and protect us from the punishment of the Fire",
     ftDuaRef: "Al-Baqarah: 201",
     sidebarDuaRef: "Al-Baqarah: 201",
+
+    d9d: "Temporarily pause performing rituals if you experience symptoms of low blood sugar.",
+    d9symptoms_title: "Symptoms of Low Blood Sugar:",
+    d9symptoms:
+      "Sudden sweating • Trembling or shaking • Dizziness and poor balance • Severe hunger • Rapid heartbeat • Weakness or fatigue • Confusion • Blurred vision • Behavior changes",
+    d9severe_title: "Severe symptoms:",
+    d9severe: "Inability to speak or walk • Loss of consciousness • Seizures",
+
+    d10t: "Watch for High Blood Sugar Symptoms",
+    d10d: "Diabetic pilgrims may experience high blood sugar during Hajj due to stress and dietary changes.",
+    d10symptoms_title: "Symptoms of High Blood Sugar:",
+    d10symptoms:
+      "Excessive thirst • Frequent urination • Dry mouth • Fatigue • Blurred vision",
+    d10manage_title: "Management during Hajj:",
+    d10manage:
+      "Rest • Drink water • Check blood sugar • Take medication/insulin as prescribed • Seek medical help if symptoms persist",
+    p3HighTitle: "Managing High Blood Sugar during Hajj",
+    h_fa1: "Rest",
+    h_fa2: "Drink water",
+    h_fa3: "Check blood sugar",
+    h_fa4: "Take medication or insulin as prescribed",
+    h_fa5: "Seek medical help if symptoms persist",
   },
   ru: {
     dir: "ltr",
@@ -235,7 +280,7 @@ const HG = {
     fa2: "Съешьте блюдо, богатое углеводами, для поддержания уровня сахара.",
     fa3: "Проверьте уровень сахара через 15 минут.",
     fa4: "Если показатель остаётся низким, повторите с соком или мёдом и проверьте через 15 минут.",
-    fa5: "В случае потери сознания и отсутствия глюкагона — немедленно в больницу.",
+    fa5: "Если глюкагон недоступен и пациент не приходит в сознание в течение 15–20 минут — немедленно в больницу.\n\nИнъекция глюкагона: Используется как экстренная помощь при тяжёлой гипогликемии.",
     sdeaName: "Саудийская ассоциация диабета и эндокринологии — QAND",
     qrScan: "Сканировать",
     backHome: "На главную",
@@ -256,6 +301,29 @@ const HG = {
       "Господь наш, даруй нам благо в этом мире и в мире ином и защити нас от мучений Огня",
     ftDuaRef: "Аль-Бакара: 201",
     sidebarDuaRef: "Аль-Бакара: 201",
+
+    d9d: "Временно приостановите выполнение ритуалов, если у вас возникли симптомы низкого сахара.",
+    d9symptoms_title: "Симптомы низкого сахара:",
+    d9symptoms:
+      "Внезапное потоотделение • Дрожь • Головокружение • Сильный голод • Учащённое сердцебиение • Слабость • Спутанность сознания • Затуманенное зрение",
+    d9severe_title: "Тяжёлые симптомы:",
+    d9severe: "Неспособность говорить или ходить • Потеря сознания • Судороги",
+
+    d10t: "Следите за симптомами высокого сахара",
+    d10d: "Паломники с диабетом могут испытывать высокий уровень сахара из-за стресса и изменения питания.",
+    d10symptoms_title: "Симптомы высокого сахара:",
+    d10symptoms:
+      "Сильная жажда • Частое мочеиспускание • Сухость во рту • Усталость • Затуманенное зрение",
+    d10manage_title: "Действия во время хаджа:",
+    d10manage:
+      "Отдых • Пить воду • Контроль сахара • Приём лекарств • Обращение к врачу при ухудшении",
+
+    p3HighTitle: "Действия при высоком сахаре во время хаджа",
+    h_fa1: "Отдых",
+    h_fa2: "Пить воду",
+    h_fa3: "Контроль сахара",
+    h_fa4: "Приём лекарств или инсулина",
+    h_fa5: "Обращение к врачу при ухудшении",
   },
   fa: {
     dir: "rtl",
@@ -317,7 +385,7 @@ const HG = {
     fa2: "یک وعده غذایی سرشار از کربوهیدرات برای حفظ سطح قند بخورید.",
     fa3: "پس از 15 دقیقه قند خون را دوباره بررسی کنید.",
     fa4: "اگر هنوز پایین است، مرحله اول را تکرار کنید و بعد از 15 دقیقه بسنجید.",
-    fa5: "اگر گلوکاگون در دسترس نیست و بیمار هوشیاری خود را باز نیافت، بلافاصله به بیمارستان منتقل کنید.",
+    fa5: "اگر گلوکاگون در دسترس نیست و بیمار در 15–20 دقیقه هوشیاری خود را باز نیافت، بلافاصله به بیمارستان منتقل کنید.\n\nآمپول گلوکاگون: برای درمان اورژانسی افت شدید قند خون استفاده می‌شود.",
     sdeaName: "انجمن دیابت و غدد درون‌ریز عربستان سعودی — QAND",
     qrScan: "اسکن کنید",
     backHome: "بازگشت به خانه",
@@ -339,6 +407,28 @@ const HG = {
       "پروردگارا در دنیا و آخرت به ما نیکی عطا کن و از عذاب آتش نگاه دار",
     ftDuaRef: "البقره: ۲۰۱",
     sidebarDuaRef: "البقره: ۲۰۱",
+
+    d9d: "در صورت احساس علائم کاهش قند خون مناسک را موقتاً متوقف کنید.",
+    d9symptoms_title: "علائم افت قند:",
+    d9symptoms:
+      "تعریق ناگهانی • لرزش • سرگیجه • گرسنگی شدید • تپش قلب • ضعف • گیجی • تاری دید",
+    d9severe_title: "علائم خطرناک:",
+    d9severe: "ناتوانی در صحبت یا راه رفتن • بیهوشی • تشنج",
+
+    d10t: "مراقب علائم قند بالا باشید",
+    d10d: "حاجیان دیابتی ممکن است به دلیل استرس و تغییر رژیم غذایی دچار قند بالا شوند.",
+    d10symptoms_title: "علائم قند بالا:",
+    d10symptoms: "تشنگی شدید • تکرر ادرار • خشکی دهان • خستگی • تاری دید",
+    d10manage_title: "اقدامات در حج:",
+    d10manage:
+      "استراحت • نوشیدن آب • کنترل قند • مصرف دارو/انسولین • مراجعه به پزشک",
+
+    p3HighTitle: "اقدامات قند بالا در حج",
+    h_fa1: "استراحت",
+    h_fa2: "نوشیدن آب",
+    h_fa3: "کنترل قند",
+    h_fa4: "مصرف دارو/انسولین",
+    h_fa5: "مراجعه به پزشک در صورت ادامه علائم",
   },
   tr: {
     dir: "ltr",
@@ -402,7 +492,7 @@ const HG = {
     fa2: "Kan şekeri seviyesini korumak için karbonhidrat açısından zengin bir öğün yiyin.",
     fa3: "15 dakika sonra kan şekerini yeniden kontrol edin.",
     fa4: "Değer hâlâ düşükse meyve suyu veya bal ile tekrarlayın ve 15 dakika sonra ölçün.",
-    fa5: "Glukagon mevcut değilse ve hasta bilincini kazanmazsa derhal hastaneye kaldırın.",
+    fa5: "Glukagon mevcut değilse ve hasta 15–20 dakika içinde bilincini kazanmazsa derhal hastaneye kaldırın.\n\nGlukagon iğnesi: Şiddetli hipoglisemi durumunda acil tedavi olarak kullanılır.",
     sdeaName: "Suudi Diyabet ve Endokrin Derneği — QAND",
     qrScan: "Ziyaret için tarayın",
     backHome: "Ana Sayfaya Dön",
@@ -424,6 +514,29 @@ const HG = {
       "Rabbimiz, bize dünyada ve ahirette iyilik ver ve bizi cehennem azabından koru",
     ftDuaRef: "Bakara: 201",
     sidebarDuaRef: "Bakara: 201",
+
+    d9d: "Düşük kan şekeri belirtileri hissedilirse ibadetleri geçici olarak durdurun.",
+    d9symptoms_title: "Düşük şeker belirtileri:",
+    d9symptoms:
+      "Ani terleme • Titreme • Baş dönmesi • Şiddetli açlık • Çarpıntı • Halsizlik • Bilinç bulanıklığı • Bulanık görme",
+    d9severe_title: "Şiddetli belirtiler:",
+    d9severe: "Konuşamama veya yürüyememe • Bayılma • Nöbet",
+
+    d10t: "Yüksek Şeker Belirtilerine Dikkat Edin",
+    d10d: "Diyabetli hacılar stres ve diyet değişiklikleri nedeniyle yüksek kan şekeri yaşayabilir.",
+    d10symptoms_title: "Yüksek şeker belirtileri:",
+    d10symptoms:
+      "Aşırı susuzluk • Sık idrara çıkma • Ağız kuruluğu • Yorgunluk • Bulanık görme",
+    d10manage_title: "Hac sırasında:",
+    d10manage:
+      "Dinlenmek • Su içmek • Kan şekerini ölçmek • İlaç/insülin almak • Doktora başvurmak",
+
+    p3HighTitle: "Hac'ta Yüksek Şeker Yönetimi",
+    h_fa1: "Dinlenmek",
+    h_fa2: "Su içmek",
+    h_fa3: "Kan şekerini ölçmek",
+    h_fa4: "İlaç veya insülin almak",
+    h_fa5: "Doktora başvurmak",
   },
   ur: {
     dir: "rtl",
@@ -487,7 +600,7 @@ const HG = {
     fa2: "بلڈ شوگر برقرار رکھنے کے لیے کاربوہائیڈریٹ سے بھرپور کھانا کھائیں۔",
     fa3: "15 منٹ بعد بلڈ شوگر دوبارہ چیک کریں۔",
     fa4: "اگر شوگر ابھی بھی کم ہے تو جوس یا شہد کے ساتھ دہرائیں اور 15 منٹ بعد چیک کریں۔",
-    fa5: "اگر گلوکاگون دستیاب نہیں اور مریض ہوش میں نہ آئے تو فوری طور پر ہسپتال منتقل کریں۔",
+    fa5: "اگر گلوکاگون دستیاب نہیں اور مریض 15–20 منٹ میں ہوش میں نہ آئے تو فوری ہسپتال منتقل کریں۔\n\nگلوکاگون انجیکشن: شدید کم شوگر میں ہنگامی علاج کے طور پر استعمال ہوتا ہے۔",
     sdeaName: "سعودی ذیابیطس اور اینڈوکرائن ایسوسی ایشن — QAND",
     qrScan: "اسکین کریں",
     backHome: "ہوم پر واپس",
@@ -508,6 +621,29 @@ const HG = {
     ftDuaText: "اے ہمارے رب! دنیا اور آخرت میں بھلائی دے اور آگ کے عذاب سے بچا",
     sidebarDuaRef: "البقرہ: 201",
     ftDuaRef: "البقرہ: 201",
+
+    d9d: "اگر بلڈ شوگر کم ہونے کی علامات محسوس ہوں تو مناسک عارضی طور پر روک دیں۔",
+    d9symptoms_title: "کم شوگر کی علامات:",
+    d9symptoms:
+      "اچانک پسینہ آنا • کپکپی • چکر آنا • شدید بھوک • دل کی دھڑکن تیز • کمزوری • الجھن • دھندلا نظر آنا",
+    d9severe_title: "خطرناک علامات:",
+    d9severe: "بول یا چل نہ سکنا • بے ہوشی • دورے",
+
+    d10t: "ہائی شوگر کی علامات پر دھیان دیں",
+    d10d: "ذیابیطس کے مریض حاجیوں کو تھکاوٹ اور غذا کی تبدیلی سے شوگر بڑھ سکتی ہے۔",
+    d10symptoms_title: "ہائی شوگر کی علامات:",
+    d10symptoms:
+      "شدید پیاس • بار بار پیشاب • منہ خشک ہونا • تھکن • دھندلا نظر آنا",
+    d10manage_title: "حج کے دوران:",
+    d10manage:
+      "آرام کرنا • پانی پینا • شوگر چیک کرنا • دوا/انسولین لینا • ڈاکٹر سے رجوع کرنا",
+
+    p3HighTitle: "حج میں ہائی شوگر سے نمٹنا",
+    h_fa1: "آرام کرنا",
+    h_fa2: "پانی پینا",
+    h_fa3: "شوگر چیک کرنا",
+    h_fa4: "دوا یا انسولین لینا",
+    h_fa5: "ڈاکٹر سے رجوع کرنا",
   },
 };
 
@@ -589,12 +725,12 @@ function applyLang(lang) {
 
   // أرقام البطاقات
   const nums = {
-    ar: ["١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"],
-    fa: ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"],
-    ur: ["١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"],
-    en: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-    ru: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-    tr: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    ar: ["١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩", "١٠"],
+    fa: ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱٠"],
+    ur: ["١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩", "١٠"],
+    en: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ru: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    tr: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
   };
   const n = nums[lang] || nums.en;
 
@@ -612,6 +748,8 @@ function applyLang(lang) {
   s("card-num-d7", n[6]);
   s("card-num-d8", n[7]);
   s("card-num-d9", n[8]);
+  s("card-num-d10", n[9]);
+
   // الإسعافات
   s("card-num-fa1", n[0]);
   s("card-num-fa2", n[1]);
@@ -652,6 +790,19 @@ function applyLang(lang) {
   s("d9t", t.d9t);
   s("d9d", t.d9d);
 
+  s("d9symptoms-title", t.d9symptoms_title);
+  s("d9symptoms", t.d9symptoms);
+  s("d9severe-title", t.d9severe_title);
+  s("d9severe", t.d9severe);
+
+  // بطاقة ارتفاع السكر
+  s("d10t", t.d10t);
+  s("d10d", t.d10d);
+  s("d10symptoms-title", t.d10symptoms_title);
+  s("d10symptoms", t.d10symptoms);
+  s("d10manage-title", t.d10manage_title);
+  s("d10manage", t.d10manage);
+
   // ── Phase 3 ──
   s("p3-title", t.p3Title);
   s("p3-sub", t.p3Sub);
@@ -660,6 +811,13 @@ function applyLang(lang) {
   s("fa3", t.fa3);
   s("fa4", t.fa4);
   s("fa5", t.fa5);
+
+  s("p3-high-title", t.p3HighTitle);
+  s("h_fa1", t.h_fa1);
+  s("h_fa2", t.h_fa2);
+  s("h_fa3", t.h_fa3);
+  s("h_fa4", t.h_fa4);
+  s("h_fa5", t.h_fa5);
 
   // ── SDEA ──
   s("sdea-name", t.sdeaName);

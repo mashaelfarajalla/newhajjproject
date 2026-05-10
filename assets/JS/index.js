@@ -46,6 +46,7 @@ const UI = {
     loading: "جارٍ التحميل...",
     featLabel: "ما يقدمه الدليل",
     featTitle: "كل ما يحتاجه الحاج في مكان واحد",
+    featDesc: "دليل شامل لجميع احتياجات الحاج خلال حجهم",
     qSectionLabel: "القرآن الكريم",
     qTitle: "سور قرآنية مختارة",
     qDesc: "آيات مباركة عن الحج والعبادة — اختر السورة واقرأ بلغتك",
@@ -164,6 +165,7 @@ const UI = {
     loading: "Loading...",
     featLabel: "What the Guide Offers",
     featTitle: "Everything a Pilgrim Needs in One Place",
+    featDesc: "A complete guide for all pilgrims’ needs during Hajj",
     qSectionLabel: "Holy Quran",
     qTitle: "Selected Quranic Surahs",
     qDesc:
@@ -284,6 +286,7 @@ const UI = {
     loading: "Загрузка...",
     featLabel: "Что предлагает путеводитель",
     featTitle: "Всё необходимое паломнику в одном месте",
+    featDesc: "Полное руководство для всех нужд паломников во время хаджа",
     qSectionLabel: "Священный Коран",
     qTitle: "Избранные суры Корана",
     qDesc:
@@ -404,6 +407,7 @@ const UI = {
     loading: "در حال بارگذاری...",
     featLabel: "آنچه راهنما ارائه می‌دهد",
     featTitle: "هر آنچه حاجی نیاز دارد در یک مکان",
+    featDesc: "راهنمای جامع برای تمام نیازهای زائران در طول حج",
     qSectionLabel: "قرآن کریم",
     qTitle: "سوره‌های منتخب قرآن",
     qDesc: "آیات مبارک درباره حج — سوره‌ای انتخاب کنید و به زبان خود بخوانید",
@@ -522,6 +526,7 @@ const UI = {
     loading: "Yükleniyor...",
     featLabel: "Rehber Ne Sunuyor",
     featTitle: "Hacının İhtiyaç Duyduğu Her Şey Tek Yerde",
+    featDesc: "Hac boyunca hacıların tüm ihtiyaçları için kapsamlı rehber",
     qSectionLabel: "Kuran-ı Kerim",
     qTitle: "Seçilmiş Kuran Sureleri",
     qDesc:
@@ -642,6 +647,7 @@ const UI = {
     loading: "لوڈ ہو رہا ہے...",
     featLabel: "رہنما کیا پیش کرتا ہے",
     featTitle: "حاجی کی تمام ضروریات ایک جگہ",
+    featDesc: "حج کے دوران حجاج کی تمام ضروریات کے لیے مکمل رہنمائی",
     qSectionLabel: "قرآن کریم",
     qTitle: "منتخب قرآنی سورتیں",
     qDesc:
@@ -1297,6 +1303,7 @@ function setGlobalLang(lang, btn) {
   s("f4d", ui.f4d);
   s("f5t", ui.f5t);
   s("f5d", ui.f5d);
+  s("feat-desc", ui.featDesc);
 
   // ── Sidebar ──
   s("sb-health", ui.sbHealth);
