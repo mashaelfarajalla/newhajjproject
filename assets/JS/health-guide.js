@@ -680,7 +680,17 @@ function applyLang(lang) {
   };
 
   // ── Nav dropdown ──
-  document.getElementById("currentFlag").textContent = t.flag;
+  // document.getElementById("currentFlag").textContent = t.flag;
+  const flagMap = {
+    ar: '<span class="fi fi-sa"></span>',
+    en: '<span class="fi fi-gb"></span>',
+    ru: '<span class="fi fi-ru"></span>',
+    fa: '<span class="fi fi-ir"></span>',
+    tr: '<span class="fi fi-tr"></span>',
+    ur: '<span class="fi fi-pk"></span>',
+  };
+  const flagEl = document.getElementById("currentFlag");
+  if (flagEl) flagEl.innerHTML = flagMap[lang] || "";
   document.getElementById("currentLangName").textContent = t.langName;
   document
     .querySelectorAll(".lang-option")

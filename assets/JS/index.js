@@ -1216,30 +1216,18 @@ function setGlobalLang(lang, btn) {
   } catch (e) {}
 
   // ── Dropdown display ──
-  // const flagEl = btn.querySelector(".lang-flag");
-  // document.getElementById("currentFlag").textContent = flagEl
-  //   ? flagEl.textContent.trim()
-  //   : flag;
-  // document.getElementById("currentLangName").textContent = btn.dataset.name;
-  // document
-  //   .querySelectorAll(".lang-option")
-  //   .forEach((b) => b.classList.remove("active"));
-  // btn.classList.add("active");
-  // document.getElementById("langDropdown").classList.remove("open");
-
-  // ── Dropdown display ──
-  const flagSpan = document.getElementById("currentFlag");
   const nameSpan = document.getElementById("currentLangName");
 
-  // خذ العلم من الـ onclick مباشرة مش من dataset
-  const langFlags = {
-    ar: "🇸🇦",
-    en: "🇬🇧",
-    ru: "🇷🇺",
-    fa: "🇮🇷",
-    tr: "🇹🇷",
-    ur: "🇵🇰",
+  const flagEl = document.getElementById("currentFlag");
+  const flagMap = {
+    ar: '<span class="fi fi-sa"></span>',
+    en: '<span class="fi fi-gb"></span>',
+    ru: '<span class="fi fi-ru"></span>',
+    fa: '<span class="fi fi-ir"></span>',
+    tr: '<span class="fi fi-tr"></span>',
+    ur: '<span class="fi fi-pk"></span>',
   };
+
   const langNames = {
     ar: "العربية",
     en: "English",
@@ -1248,7 +1236,7 @@ function setGlobalLang(lang, btn) {
     tr: "Türkçe",
     ur: "اردو",
   };
-  if (flagSpan) flagSpan.textContent = langFlags[lang];
+  if (flagEl) flagEl.innerHTML = flagMap[lang] || "";
   if (nameSpan) nameSpan.textContent = langNames[lang];
 
   document
