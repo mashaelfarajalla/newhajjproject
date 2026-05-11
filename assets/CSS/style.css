@@ -3,7 +3,6 @@
   src: url("../Fonts/AmiriQuran-Regular.ttf") format("truetype");
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap"); */
 @font-face {
   font-family: "Noto Nastaliq Urdu";
   src: url("../Fonts/NotoNastaliqUrdu-Regular.ttf") format("truetype");
@@ -285,7 +284,7 @@ a {
 }
 [dir="ltr"] .lang-menu {
   right: auto;
-  left: 0;
+  left: -72px;
 }
 .lang-option {
   display: flex;
