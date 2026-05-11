@@ -26,6 +26,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+
     <link rel="stylesheet" href="assets/CSS/style.css" />
 
     <link rel="shortcut icon" href="assets/IMG/images.jpg" />
@@ -70,47 +75,46 @@
           <!-- Language Dropdown -->
           <div class="lang-dropdown" id="langDropdown">
             <button class="lang-current-btn" onclick="toggleLangMenu(event)">
-              <span class="flag" id="currentFlag">🇸🇦</span>
+              <span class="flag" id="currentFlag"></span>
               <span id="currentLangName">العربية</span>
-              <i class="fas fa-chevron-down chevron"></i>
             </button>
             <div class="lang-menu" id="langMenu">
               <button
                 class="lang-option active"
                 onclick="setLang('ar', '🇸🇦', 'العربية', 'rtl', this)"
               >
-                <span class="lang-flag">🇸🇦</span> العربية
+                <span class="fi fi-sa lang-flag"></span> العربية
               </button>
               <div class="lang-divider"></div>
               <button
                 class="lang-option"
                 onclick="setLang('en', '🇬🇧', 'English', 'ltr', this)"
               >
-                <span class="lang-flag">🇬🇧</span> English
+                <span class="fi fi-gb lang-flag"></span> English
               </button>
               <button
                 class="lang-option"
                 onclick="setLang('ru', '🇷🇺', 'Русский', 'ltr', this)"
               >
-                <span class="lang-flag">🇷🇺</span> Русский
+                <span class="fi fi-ru lang-flag"></span> Русский
               </button>
               <button
                 class="lang-option"
                 onclick="setLang('fa', '🇮🇷', 'فارسی', 'rtl', this)"
               >
-                <span class="lang-flag">🇮🇷</span> فارسی
+                <span class="fi fi-ir lang-flag"></span> فارسی
               </button>
               <button
                 class="lang-option"
                 onclick="setLang('tr', '🇹🇷', 'Türkçe', 'ltr', this)"
               >
-                <span class="lang-flag">🇹🇷</span> Türkçe
+                <span class="fi fi-tr lang-flag"></span> Türkçe
               </button>
               <button
                 class="lang-option"
                 onclick="setLang('ur', '🇵🇰', 'اردو', 'rtl', this)"
               >
-                <span class="lang-flag">🇵🇰</span> اردو
+                <span class="fi fi-pk lang-flag"></span> اردو
               </button>
             </div>
           </div>
@@ -861,7 +865,7 @@
                       footerSetLang('ar', '🇸🇦', 'العربية');
                       return false;
                     "
-                    >🇸🇦 العربية</a
+                    ><span class="fi fi-sa lang-flag"></span> العربية</a
                   >
                 </li>
                 <li>
@@ -871,7 +875,7 @@
                       footerSetLang('en', '🇬🇧', 'English');
                       return false;
                     "
-                    >🇬🇧 English</a
+                    ><span class="fi fi-gb lang-flag"></span> English</a
                   >
                 </li>
                 <li>
@@ -881,7 +885,7 @@
                       footerSetLang('ru', '🇷🇺', 'Русский');
                       return false;
                     "
-                    >🇷🇺 Русский</a
+                    ><span class="fi fi-ru lang-flag"></span> Русский</a
                   >
                 </li>
                 <li>
@@ -891,7 +895,7 @@
                       footerSetLang('fa', '🇮🇷', 'فارسی');
                       return false;
                     "
-                    >🇮🇷 فارسی</a
+                    ><span class="fi fi-ir lang-flag"></span> فارسی</a
                   >
                 </li>
                 <li>
@@ -901,7 +905,7 @@
                       footerSetLang('tr', '🇹🇷', 'Türkçe');
                       return false;
                     "
-                    >🇹🇷 Türkçe</a
+                    ><span class="fi fi-tr lang-flag"></span> Türkçe</a
                   >
                 </li>
                 <li>
@@ -911,7 +915,7 @@
                       footerSetLang('ur', '🇵🇰', 'اردو');
                       return false;
                     "
-                    >🇵🇰 اردو</a
+                    ><span class="fi fi-pk lang-flag"></span> اردو</a
                   >
                 </li>
               </ul>
