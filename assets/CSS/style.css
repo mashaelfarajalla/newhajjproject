@@ -3,6 +3,36 @@
   src: url("../Fonts/AmiriQuran-Regular.ttf") format("truetype");
 }
 
+/* @import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap"); */
+@font-face {
+  font-family: "Noto Nastaliq Urdu";
+  src: url("../Fonts/NotoNastaliqUrdu-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Nastaliq Urdu";
+  src: url("../Fonts/NotoNastaliqUrdu-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* طبّق الخط بس على النصوص مش على الأيقونات */
+:lang(ur) body,
+:lang(ur) p,
+:lang(ur) h1,
+:lang(ur) h2,
+:lang(ur) h3,
+:lang(ur) h4,
+:lang(ur)
+  span:not(.fa):not([class*="fa-"]):not([class*="fab"]):not([class*="fas"]):not(
+    [class*="far"]
+  ),
+:lang(ur) div,
+:lang(ur) a,
+:lang(ur) button,
+:lang(ur) li {
+  font-family: "Gulzar", serif !important;
+}
 /* تعريف الالوان المستخدمة في الصفحة */
 :root {
   --gold: #c8972a;
@@ -606,7 +636,7 @@ a {
   line-height: 1.2;
   color: var(--gold-light);
   text-shadow: 0 0 40px rgba(200, 151, 42, 0.3);
-  margin-bottom: 16px;
+  margin-bottom: 45px;
   animation: fadeDown 0.9s ease 0.1s both;
 }
 .hero-ayah {
@@ -713,7 +743,7 @@ section {
 .section-title {
   font-size: clamp(1.7rem, 4vw, 2.6rem);
   color: var(--gold-light);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 .section-desc {
